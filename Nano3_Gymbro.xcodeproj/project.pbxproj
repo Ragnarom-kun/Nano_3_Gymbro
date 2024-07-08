@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */; };
+		E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819552C3BA5EF008883D4 /* ContentView.swift */; };
+		E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42819572C3BA5F0008883D4 /* Assets.xcassets */; };
+		E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E428195A2C3BA5F0008883D4 /* Preview Assets.xcassets */; };
+		E42819652C3BA5F0008883D4 /* Nano3_GymbroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819642C3BA5F0008883D4 /* Nano3_GymbroTests.swift */; };
+		E428196F2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428196E2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift */; };
+		E42819712C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819702C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E42819612C3BA5F0008883D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E42819482C3BA5EF008883D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E428194F2C3BA5EF008883D4;
+			remoteInfo = Nano3_Gymbro;
+		};
+		E428196B2C3BA5F0008883D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E42819482C3BA5EF008883D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E428194F2C3BA5EF008883D4;
+			remoteInfo = Nano3_Gymbro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroApp.swift; sourceTree = "<group>"; };
+		E42819552C3BA5EF008883D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E42819572C3BA5F0008883D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E428195A2C3BA5F0008883D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E42819602C3BA5F0008883D4 /* Nano3_GymbroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nano3_GymbroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42819642C3BA5F0008883D4 /* Nano3_GymbroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroTests.swift; sourceTree = "<group>"; };
+		E428196A2C3BA5F0008883D4 /* Nano3_GymbroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nano3_GymbroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E428196E2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroUITests.swift; sourceTree = "<group>"; };
+		E42819702C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E428194D2C3BA5EF008883D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E428195D2C3BA5F0008883D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42819672C3BA5F0008883D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E42819472C3BA5EF008883D4 = {
+			isa = PBXGroup;
+			children = (
+				E42819522C3BA5EF008883D4 /* Nano3_Gymbro */,
+				E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */,
+				E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */,
+				E42819512C3BA5EF008883D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E42819512C3BA5EF008883D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */,
+				E42819602C3BA5F0008883D4 /* Nano3_GymbroTests.xctest */,
+				E428196A2C3BA5F0008883D4 /* Nano3_GymbroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E42819522C3BA5EF008883D4 /* Nano3_Gymbro */ = {
+			isa = PBXGroup;
+			children = (
+				E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */,
+				E42819552C3BA5EF008883D4 /* ContentView.swift */,
+				E42819572C3BA5F0008883D4 /* Assets.xcassets */,
+				E42819592C3BA5F0008883D4 /* Preview Content */,
+			);
+			path = Nano3_Gymbro;
+			sourceTree = "<group>";
+		};
+		E42819592C3BA5F0008883D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E428195A2C3BA5F0008883D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */ = {
+			isa = PBXGroup;
+			children = (
+				E42819642C3BA5F0008883D4 /* Nano3_GymbroTests.swift */,
+			);
+			path = Nano3_GymbroTests;
+			sourceTree = "<group>";
+		};
+		E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E428196E2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift */,
+				E42819702C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift */,
+			);
+			path = Nano3_GymbroUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E428194F2C3BA5EF008883D4 /* Nano3_Gymbro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E42819742C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_Gymbro" */;
+			buildPhases = (
+				E428194C2C3BA5EF008883D4 /* Sources */,
+				E428194D2C3BA5EF008883D4 /* Frameworks */,
+				E428194E2C3BA5EF008883D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nano3_Gymbro;
+			productName = Nano3_Gymbro;
+			productReference = E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E428195F2C3BA5F0008883D4 /* Nano3_GymbroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E42819772C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_GymbroTests" */;
+			buildPhases = (
+				E428195C2C3BA5F0008883D4 /* Sources */,
+				E428195D2C3BA5F0008883D4 /* Frameworks */,
+				E428195E2C3BA5F0008883D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E42819622C3BA5F0008883D4 /* PBXTargetDependency */,
+			);
+			name = Nano3_GymbroTests;
+			productName = Nano3_GymbroTests;
+			productReference = E42819602C3BA5F0008883D4 /* Nano3_GymbroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E42819692C3BA5F0008883D4 /* Nano3_GymbroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E428197A2C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_GymbroUITests" */;
+			buildPhases = (
+				E42819662C3BA5F0008883D4 /* Sources */,
+				E42819672C3BA5F0008883D4 /* Frameworks */,
+				E42819682C3BA5F0008883D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E428196C2C3BA5F0008883D4 /* PBXTargetDependency */,
+			);
+			name = Nano3_GymbroUITests;
+			productName = Nano3_GymbroUITests;
+			productReference = E428196A2C3BA5F0008883D4 /* Nano3_GymbroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E42819482C3BA5EF008883D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E428194F2C3BA5EF008883D4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E428195F2C3BA5F0008883D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E428194F2C3BA5EF008883D4;
+					};
+					E42819692C3BA5F0008883D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E428194F2C3BA5EF008883D4;
+					};
+				};
+			};
+			buildConfigurationList = E428194B2C3BA5EF008883D4 /* Build configuration list for PBXProject "Nano3_Gymbro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E42819472C3BA5EF008883D4;
+			productRefGroup = E42819512C3BA5EF008883D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E428194F2C3BA5EF008883D4 /* Nano3_Gymbro */,
+				E428195F2C3BA5F0008883D4 /* Nano3_GymbroTests */,
+				E42819692C3BA5F0008883D4 /* Nano3_GymbroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E428194E2C3BA5EF008883D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
+				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E428195E2C3BA5F0008883D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42819682C3BA5F0008883D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E428194C2C3BA5EF008883D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
+				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E428195C2C3BA5F0008883D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42819652C3BA5F0008883D4 /* Nano3_GymbroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42819662C3BA5F0008883D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42819712C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift in Sources */,
+				E428196F2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E42819622C3BA5F0008883D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E428194F2C3BA5EF008883D4 /* Nano3_Gymbro */;
+			targetProxy = E42819612C3BA5F0008883D4 /* PBXContainerItemProxy */;
+		};
+		E428196C2C3BA5F0008883D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E428194F2C3BA5EF008883D4 /* Nano3_Gymbro */;
+			targetProxy = E428196B2C3BA5F0008883D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E42819722C3BA5F0008883D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E42819732C3BA5F0008883D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E42819752C3BA5F0008883D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-Gymbro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E42819762C3BA5F0008883D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-Gymbro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E42819782C3BA5F0008883D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-GymbroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nano3_Gymbro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nano3_Gymbro";
+			};
+			name = Debug;
+		};
+		E42819792C3BA5F0008883D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-GymbroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nano3_Gymbro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nano3_Gymbro";
+			};
+			name = Release;
+		};
+		E428197B2C3BA5F0008883D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-GymbroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nano3_Gymbro;
+			};
+			name = Debug;
+		};
+		E428197C2C3BA5F0008883D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nano3.Nano3-GymbroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nano3_Gymbro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E428194B2C3BA5EF008883D4 /* Build configuration list for PBXProject "Nano3_Gymbro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42819722C3BA5F0008883D4 /* Debug */,
+				E42819732C3BA5F0008883D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E42819742C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_Gymbro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42819752C3BA5F0008883D4 /* Debug */,
+				E42819762C3BA5F0008883D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E42819772C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_GymbroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42819782C3BA5F0008883D4 /* Debug */,
+				E42819792C3BA5F0008883D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E428197A2C3BA5F0008883D4 /* Build configuration list for PBXNativeTarget "Nano3_GymbroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E428197B2C3BA5F0008883D4 /* Debug */,
+				E428197C2C3BA5F0008883D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E42819482C3BA5EF008883D4 /* Project object */;
+}
