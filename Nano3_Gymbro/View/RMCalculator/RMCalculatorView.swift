@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RMCalculatorView: View {
+    @StateObject var viewModel = RMCalculatorViewModel()
     @State var weight = 0.0
     @State var username = ""
 
@@ -23,9 +24,15 @@ struct RMCalculatorView: View {
             .listRowBackground(Color.clear)
 
             RMInputView()
+
+            Section {
+                Text("Result")
+                Text("\(viewModel.oneRepMax)")
+            }
         }
         .listStyle(InsetGroupedListStyle())
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .environmentObject(viewModel)
     }
 }
 

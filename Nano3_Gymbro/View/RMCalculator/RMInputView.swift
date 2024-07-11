@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RMInputView: View {
+    @EnvironmentObject var viewModel: RMCalculatorViewModel
     @State var weight: Int = 20
     @State var reps: Int = 1
     @State var sets: Int = 1
@@ -75,6 +76,7 @@ struct RMInputView: View {
 
             Button(action: {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                viewModel.calculateRM(weight: Double(weight), reps: Double(reps))
             }, label: {
                 Text("Calculate")
                     .frame(maxWidth: .infinity)

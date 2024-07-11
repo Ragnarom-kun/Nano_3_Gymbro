@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		201418022C3F89BD00321022 /* RMCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418012C3F89BD00321022 /* RMCalculatorView.swift */; };
 		201418042C3F8A9600321022 /* RMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418032C3F8A9600321022 /* RMInputView.swift */; };
+		201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418052C403C1100321022 /* RMCalculatorViewModel.swift */; };
 		20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */; };
 		E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */; };
 		E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819552C3BA5EF008883D4 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		201418012C3F89BD00321022 /* RMCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCalculatorView.swift; sourceTree = "<group>"; };
 		201418032C3F8A9600321022 /* RMInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInputView.swift; sourceTree = "<group>"; };
+		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/View/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
 		20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroApp.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		E428197F2C3F84E0008883D4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				201418052C403C1100321022 /* RMCalculatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
+				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
 				201418042C3F8A9600321022 /* RMInputView.swift in Sources */,
 				201418022C3F89BD00321022 /* RMCalculatorView.swift in Sources */,
