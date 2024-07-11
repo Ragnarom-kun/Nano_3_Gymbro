@@ -1,7 +1,39 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
 
+    },
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "Calculate" : {
+
+    },
+    "Calculator" : {
+
+    },
+    "Exercise" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Reps" : {
+
+    },
+    "RM Calculator" : {
+
+    },
+    "Sets" : {
+
+    },
+    "Weight" : {
+
+    }
   },
   "version" : "1.0"
 }
