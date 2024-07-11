@@ -7,23 +7,27 @@
 
 import SwiftUI
 
-struct RouteView: View {
-    @StateObject private var navPath = Router.shared
-
+struct RouterView<Content: View>: View {
+    @StateObject var router = Router.shared
+    // Our root view content
+    private let content: Content
+    
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content()
+    }
+    
     var body: some View {
-        NavigationStack(path: $navPath.path) {
-            SplashScreenView()
-                .toolbar(.hidden)
-                .navigationDestination(for: Router.Destination.self) { destination in
-                    switch destination {
-                    case .Content:
-                        ContentView()
-                    }
+        NavigationStack(path: $router.path) {
+            content
+                .navigationDestination(for: Router.Destination.self) { route in
+                    routerView(for: route)
                 }
         }
+        .environmentObject(router)
     }
-}
-
-#Preview {
-    RouterView()
+    
+    @ViewBuilder
+    private func routerView(for destination: Router.Destination) -> some View {
+        RouterViewModel().view(for: destination)
+    }
 }

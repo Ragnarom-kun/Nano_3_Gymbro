@@ -18,6 +18,7 @@
 		E42819822C3F8870008883D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819812C3F8870008883D4 /* Router.swift */; };
 		E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819872C3F8A9B008883D4 /* RouterViewModel.swift */; };
 		E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428198E2C3F9AD0008883D4 /* LineChartView.swift */; };
+		E42819942C3FA47C008883D4 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819932C3FA47C008883D4 /* RouterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E42819812C3F8870008883D4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E42819872C3F8A9B008883D4 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		E428198E2C3F9AD0008883D4 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		E42819932C3FA47C008883D4 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		E428197E2C3F84DB008883D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E42819922C3FA46F008883D4 /* Router */,
 				E42819892C3F9A6F008883D4 /* LineChart */,
 			);
 			path = View;
@@ -185,6 +188,14 @@
 				E428198E2C3F9AD0008883D4 /* LineChartView.swift */,
 			);
 			path = LineChart;
+			sourceTree = "<group>";
+		};
+		E42819922C3FA46F008883D4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E42819932C3FA47C008883D4 /* RouterView.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E42819822C3F8870008883D4 /* Router.swift in Sources */,
+				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
 				E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */,
 			);
