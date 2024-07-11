@@ -1,10 +1,43 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "25.5 Kg" : {
+
+    },
+    "Add New Record" : {
+
+    },
     "Hello, World!" : {
 
     },
+    "Kg" : {
+
+    },
+    "Last" : {
+
+    },
+    "Last Updated %@" : {
+
+    },
+    "Options" : {
+
+    },
     "Personal Record" : {
+
+    },
+    "Segments" : {
+
+    },
+    "Start" : {
+
+    },
+    "Your Progress" : {
 
     }
   },

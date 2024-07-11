@@ -12,8 +12,8 @@ struct PRCardView: View {
     @State private var cards: [Card] = [
         Card(id: UUID(), title: "BenchPress", detail: "Detail for Card 1", date: .now, weight: 100),
         Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
+        Card(id: UUID(), title: "Squad", detail: "Detail for Card 1", date: .now, weight: 100),
+        Card(id: UUID(), title: "Angkat Galon", detail: "Detail for Card 1", date: .now, weight: 100),
         Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
         Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
         Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
@@ -32,8 +32,8 @@ struct PRCardView: View {
                     ScrollView{
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
                         ForEach(cards) { card in
-                            NavigationLink(destination: DetailView(card: card)) {
-                                CardView(card: card)
+                            NavigationLink(destination: DetailView(card: card, cards: cards)) {
+                                                          CardView(card: card)
                             }
                         }
                     }
@@ -61,10 +61,12 @@ struct CardView: View {
             HStack {
                 Image(systemName: "flame")
                 Text(card.title)
+                Spacer()
             }.foregroundColor(.orange)
+            .lineLimit(1)
+            .truncationMode(.tail)
             HStack(alignment:.firstTextBaseline) {
-                
-                Text("\(card.weight)").font(.system(size: 50)).bold()
+                Text("\(card.weight)").font(.system(size: 34)).bold()
                 Text("Kg")
             }
           
