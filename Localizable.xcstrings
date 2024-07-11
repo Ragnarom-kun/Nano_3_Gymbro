@@ -1,7 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Hello, World!" : {
 
+    },
+    "Personal Record" : {
+
+    }
   },
   "version" : "1.0"
 }
