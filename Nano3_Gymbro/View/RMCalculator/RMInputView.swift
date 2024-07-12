@@ -75,7 +75,6 @@ struct RMInputView: View {
             }
 
             Button(action: {
-                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 viewModel.calculateRM(weight: Double(weight), reps: Double(reps))
             }, label: {
                 Text("Calculate")

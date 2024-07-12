@@ -25,6 +25,7 @@ struct RMCalculatorView: View {
 
             RMInputView()
 
+            RMResultView()
             Section {
                 Text("Result")
                 Text("\(viewModel.oneRepMax)")
