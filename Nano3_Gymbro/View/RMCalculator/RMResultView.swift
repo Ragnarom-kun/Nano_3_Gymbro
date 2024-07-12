@@ -58,8 +58,34 @@ struct RMResultView: View {
                     })
                 }
             }
-
             .listRowSeparator(.hidden)
+
+            Grid {
+                GridRow {
+                    Text("Reps")
+                    Text("Weight")
+                    Text("% of 1RM")
+                    Text("Volume")
+                }
+                .font(.subheadline)
+                .fontWeight(.bold)
+
+                Divider()
+                    .hidden()
+
+                ForEach(2 ... 12, id: \.self) { item in
+                    var percentage = 100 - (2 * item) // Blm bener, lagi cari caranya
+                    GridRow {
+                        Text("\(item)")
+                        Text("\(item) Kg")
+                        Text("\(percentage)")
+                        Text("\(item) Kg")
+                    }
+                    .font(.subheadline)
+                    .fontWeight(.regular)
+                }
+            }
+            .frame(maxWidth: .infinity)
         }
         .listSectionSeparator(.hidden, edges: .top)
     }
