@@ -75,7 +75,7 @@ struct RMInputView: View {
             }
 
             Button(action: {
-                viewModel.calculateRM(weight: Double(weight), reps: Double(reps))
+                viewModel.calculateRM(weight: Double(weight), reps: Double(reps), sets: Double(sets))
             }, label: {
                 Text("Calculate")
                     .frame(maxWidth: .infinity)

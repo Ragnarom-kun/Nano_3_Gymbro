@@ -9,14 +9,12 @@ import SwiftUI
 
 struct RMCalculatorView: View {
     @StateObject var viewModel = RMCalculatorViewModel()
-    @State var weight = 0.0
-    @State var username = ""
 
     var body: some View {
         List {
             Section {
                 HStack {
-                    Text("RM Calculator")
+                    Text("1RM Calculator")
                         .font(.largeTitle)
                         .bold()
                 }
@@ -26,10 +24,6 @@ struct RMCalculatorView: View {
             RMInputView()
 
             RMResultView()
-            Section {
-                Text("Result")
-                Text("\(viewModel.oneRepMax)")
-            }
         }
         .listStyle(InsetGroupedListStyle())
         .frame(maxWidth: .infinity, maxHeight: .infinity)

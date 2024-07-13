@@ -4,13 +4,22 @@
     "" : {
 
     },
+    "% of 1RM" : {
+
+    },
     "%@" : {
 
     },
     "%lf" : {
 
     },
+    "%lf Kg" : {
+
+    },
     "%lld" : {
+
+    },
+    "1RM Calculator" : {
 
     },
     "Add to Progress" : {
@@ -34,16 +43,13 @@
     "Reps" : {
 
     },
-    "Result" : {
-
-    },
     "Results" : {
 
     },
-    "RM Calculator" : {
+    "Sets" : {
 
     },
-    "Sets" : {
+    "Volume" : {
 
     },
     "Weight" : {

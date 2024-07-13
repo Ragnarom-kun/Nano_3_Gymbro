@@ -16,6 +16,7 @@ struct Customer: Identifiable {
 
 struct RMResultView: View {
     @EnvironmentObject var viewModel: RMCalculatorViewModel
+    let percentages = [96, 92, 89, 86, 84, 81, 79, 76, 74, 71, 68]
 
     var body: some View {
         Section {
@@ -74,12 +75,13 @@ struct RMResultView: View {
                     .hidden()
 
                 ForEach(2 ... 12, id: \.self) { item in
-                    var percentage = 100 - (2 * item) // Blm bener, lagi cari caranya
+                    let weight = viewModel.calculateRMPercentWeight(percentage: percentages[item-2])
+
                     GridRow {
                         Text("\(item)")
-                        Text("\(item) Kg")
-                        Text("\(percentage)")
-                        Text("\(item) Kg")
+                        Text("\(weight)")
+                        Text("\(percentages[item-2])")
+                        Text("\(viewModel.calculateVolume(weight: weight)) Kg")
                     }
                     .font(.subheadline)
                     .fontWeight(.regular)
