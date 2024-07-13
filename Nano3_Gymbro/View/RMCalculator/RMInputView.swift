@@ -13,6 +13,8 @@ struct RMInputView: View {
     @State var reps: Int = 1
     @State var sets: Int = 1
     @State var exercise: String = "Bench Press"
+    @State var openedPicker: String = ""
+    @State var isWeightPickerExpanded: Bool = false
 
     var exerciseDummy = ["Bench Press", "Squat", "Deadlift"]
 
@@ -27,41 +29,67 @@ struct RMInputView: View {
             .listRowSeparator(.hidden)
             .foregroundStyle(.orange)
 
-//            HStack {
-//                Text("Weight")
-//                TextField("", value: $weight, format: .number)
-//                    .keyboardType(.numberPad)
-//                Text("kg")
-//            }
-
-            HStack {
-                Text("Weight")
-                Picker("", selection: $weight) {
-                    ForEach(5 ... 300, id: \.self) { weight in
-                        Text("\(weight)").tag(weight)
+            VStack {
+                DisclosureGroup(
+                    content: {
+                        Picker("", selection: $weight) {
+                            ForEach(5 ... 300, id: \.self) { weight in
+                                Text("\(weight)").tag(weight)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .pickerStyle(.wheel)
+                        .frame(maxHeight: 150)
+                    },
+                    label: {
+                        Text("Weight")
+                        Spacer()
                     }
-                }
-                .frame(maxWidth: .infinity)
+                )
+
+                .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(weight)")))
             }
 
-            HStack {
-                Text("Reps")
-                Picker("", selection: $reps) {
-                    ForEach(1 ... 10, id: \.self) { rep in
-                        Text("\(rep)").tag(rep)
+            VStack {
+                DisclosureGroup(
+                    content: {
+                        Picker("", selection: $reps) {
+                            ForEach(1 ... 10, id: \.self) { rep in
+                                Text("\(rep)").tag(rep)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .pickerStyle(.wheel)
+                        .frame(maxHeight: 150)
+                    },
+                    label: {
+                        Text("Reps")
+                        Spacer()
                     }
-                }
-                .frame(maxWidth: .infinity)
+                )
+
+                .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(reps)")))
             }
 
-            HStack {
-                Text("Sets")
-                Picker("", selection: $sets) {
-                    ForEach(1 ... 10, id: \.self) { set in
-                        Text("\(set)").tag(set)
+            VStack {
+                DisclosureGroup(
+                    content: {
+                        Picker("", selection: $sets) {
+                            ForEach(1 ... 10, id: \.self) { set in
+                                Text("\(set)").tag(set)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .pickerStyle(.wheel)
+                        .frame(maxHeight: 150)
+                    },
+                    label: {
+                        Text("Sets")
+                        Spacer()
                     }
-                }
-                .frame(maxWidth: .infinity)
+                )
+
+                .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(sets)")))
             }
 
             HStack {
@@ -87,6 +115,27 @@ struct RMInputView: View {
         }
 
         .listSectionSeparator(.hidden, edges: .top)
+    }
+}
+
+struct CustomDisclosureGroupStyle<Label: View>: DisclosureGroupStyle {
+    let button: Label
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            configuration.label
+            Spacer()
+            Button(action: {
+                configuration.isExpanded.toggle()
+            }, label: {
+                button
+            })
+            .buttonStyle(BorderedButtonStyle())
+        }
+
+        if configuration.isExpanded {
+            configuration.content
+                .disclosureGroupStyle(self)
+        }
     }
 }
 
