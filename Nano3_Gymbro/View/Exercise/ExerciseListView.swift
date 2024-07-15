@@ -2,71 +2,62 @@ import SwiftUI
 import SwiftData
 
 struct ExerciseListView: View {
-    
     @Environment(\.modelContext) public var context
     @Query public var exercises: [ExerciseName]
-    @StateObject private var viewModel = ExerciseViewModel()
-    @Binding var activeExercise: ExerciseName?
+    @EnvironmentObject var viewModel: ExerciseViewModel
+    @Binding var navigateToContentView: Bool
     @State private var showSheet = false
-    @State private var navigateToContentView = false
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        Group {
-            if navigateToContentView {
-                InputView()
-                    .transition(.move(edge: .leading))
-            } else {
-                NavigationView {
-                    VStack {
-                        List {
-                            ForEach(exercises.sorted(by: { $0.name < $1.name })) { exercise in
-                                VStack {
-                                    HStack {
-                                        Text(exercise.name)
-                                            .padding(.vertical, 4)
-                                        Spacer()
-                                    }
-                                    .contentShape(Rectangle())
-                                    .onTapGesture {
-                                        activeExercise = exercise // Update activeExercise here
-                                        viewModel.setActiveExercise(exercise)
-                                        print("Exercise List Active: \(viewModel.activeExercise?.name)")
-                                        navigateToContentView = true
-                                    }
-                                    .swipeActions(edge: .leading) {
-                                        Button(role: .destructive) {
-                                            viewModel.deleteItem(exercise, context: context)
-                                            print("Exercise List Active: \(viewModel.activeExercise?.name)")
-                                        } label: {
-                                            Label("Delete", systemImage: "trash")
-                                        }
-                                    }
-                                }
-                                .listRowBackground(Color.clear)
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(exercises.sorted(by: { $0.name < $1.name })) { exercise in
+                        VStack {
+                            HStack {
+                                Text(exercise.name)
+                                    .padding(.vertical, 4)
+                                Spacer()
                             }
-                        }
-                        .listStyle(PlainListStyle()) // Make the list style plain
-                    }
-                    .navigationTitle("Exercise Type")
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarLeading) {
-                            Button(action: {
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                viewModel.setActiveExercise(exercise, context: context)
                                 navigateToContentView = true
-                            }) {
-                                Image(systemName: "chevron.left")
+                                presentationMode.wrappedValue.dismiss()
+                                
+                            }
+                            .swipeActions(edge: .leading) {
+                                Button(role: .destructive) {
+                                    viewModel.deleteItem(exercise, context: context)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
                             }
                         }
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                                showSheet = true
-                            }) {
-                                Image(systemName: "plus")
-                            }
-                            .sheet(isPresented: $showSheet) {
-                                AddExerciseView()
-                                    .presentationDetents([.height(200)])
-                            }
-                        }
+                        .listRowBackground(Color.clear)
+                    }
+                }
+                .listStyle(PlainListStyle())            }
+            .navigationTitle("Exercise Type")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        navigateToContentView = true
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image(systemName: "chevron.left")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        showSheet = true
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                    .sheet(isPresented: $showSheet) {
+                        AddExerciseView()
+                            .presentationDetents([.height(200)])
                     }
                 }
             }
@@ -75,8 +66,8 @@ struct ExerciseListView: View {
     }
 }
 
-struct ExerciseListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseListView(activeExercise: .constant(nil))
-    }
-}
+//struct ExerciseListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExerciseListView(viewModel: ExerciseViewModel(), navigateToContentView: .constant(false))
+//    }
+//}

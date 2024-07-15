@@ -18,11 +18,10 @@ class ExerciseViewModel: ObservableObject{
     }
     
     func deleteItem(_ item: ExerciseName, context: ModelContext) {
+        if activeExercise == item{
+            activeExercise = nil
+        }
         context.delete(item)
-    }
-    
-    func setActiveExercise(_ exercise: ExerciseName) {
-        self.activeExercise = exercise
     }
     
     func addArray(item: ExerciseName, PR: Double, RM: Double, context: ModelContext){
@@ -32,5 +31,9 @@ class ExerciseViewModel: ObservableObject{
         if(item.RMBest < RM){
             item.RMBest = RM
         }
+    }
+    
+    func setActiveExercise(_ item: ExerciseName, context: ModelContext){
+        self.activeExercise = item
     }
 }

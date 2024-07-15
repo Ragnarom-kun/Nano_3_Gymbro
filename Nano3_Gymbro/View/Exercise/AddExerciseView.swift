@@ -58,7 +58,7 @@ struct AddExerciseView: View{
             .padding(.top)
             Spacer()
         }
-        .background(Color.clear.edgesIgnoringSafeArea(.all))
+        .background(Color.abuDefault.edgesIgnoringSafeArea(.all))
         
     }
     
