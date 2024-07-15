@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201418022C3F89BD00321022 /* RMCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418012C3F89BD00321022 /* RMCalculatorView.swift */; };
+		201418042C3F8A9600321022 /* RMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418032C3F8A9600321022 /* RMInputView.swift */; };
+		201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418052C403C1100321022 /* RMCalculatorViewModel.swift */; };
+		201418082C40439100321022 /* RMResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418072C40439100321022 /* RMResultView.swift */; };
 		20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */; };
 		E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */; };
 		E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819552C3BA5EF008883D4 /* ContentView.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201418012C3F89BD00321022 /* RMCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCalculatorView.swift; sourceTree = "<group>"; };
+		201418032C3F8A9600321022 /* RMInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInputView.swift; sourceTree = "<group>"; };
+		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/View/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
+		201418072C40439100321022 /* RMResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultView.swift; sourceTree = "<group>"; };
 		20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroApp.swift; sourceTree = "<group>"; };
@@ -81,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201418002C3F894600321022 /* RMCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				201418012C3F89BD00321022 /* RMCalculatorView.swift */,
+				201418032C3F8A9600321022 /* RMInputView.swift */,
+				201418072C40439100321022 /* RMResultView.swift */,
+			);
+			path = RMCalculator;
+			sourceTree = "<group>";
+		};
 		E42819472C3BA5EF008883D4 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +173,7 @@
 			children = (
 				E42819922C3FA46F008883D4 /* Router */,
 				E42819892C3F9A6F008883D4 /* LineChart */,
+				201418002C3F894600321022 /* RMCalculator */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				E42819862C3F8A8D008883D4 /* Router */,
+				201418052C403C1100321022 /* RMCalculatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -334,8 +354,12 @@
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E42819822C3F8870008883D4 /* Router.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
+				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
 				E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */,
+				201418042C3F8A9600321022 /* RMInputView.swift in Sources */,
+				201418082C40439100321022 /* RMResultView.swift in Sources */,
+				201418022C3F89BD00321022 /* RMCalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = 2RQ6LB993C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -529,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = 2RQ6LB993C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -1,7 +1,63 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
 
+    },
+    "% of 1RM" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lf" : {
+
+    },
+    "%lf Kg" : {
+
+    },
+    "%lld" : {
+
+    },
+    "1RM Calculator" : {
+
+    },
+    "Add to Progress" : {
+
+    },
+    "Calculate" : {
+
+    },
+    "Calculator" : {
+
+    },
+    "Exercise" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Kg" : {
+
+    },
+    "Reps" : {
+
+    },
+    "Results" : {
+
+    },
+    "Sets" : {
+
+    },
+    "Volume" : {
+
+    },
+    "Weight" : {
+
+    },
+    "Your 1RM is .." : {
+
+    }
   },
   "version" : "1.0"
 }
