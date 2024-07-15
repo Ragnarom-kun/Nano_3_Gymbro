@@ -24,6 +24,7 @@
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
 		F8B69FC82C3FE1E600AC7670 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F8B69FC72C3FE1E600AC7670 /* SwiftUICharts */; };
 		F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC92C40285500AC7670 /* ChartData.swift */; };
+		F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
 		F8B69FC92C40285500AC7670 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			children = (
 				F82B28382C3FC8EF00DCF909 /* PRCardView.swift */,
 				F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */,
+				F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */,
 			);
 			path = PRCard;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E42819822C3F8870008883D4 /* Router.swift in Sources */,
+				F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */,
 				F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */,

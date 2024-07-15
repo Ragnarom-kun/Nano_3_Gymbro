@@ -12,7 +12,8 @@ struct DetailView: View {
     let cards: [Card]
     @State private var selectedItem = 0
     @State private var selection = 0
-    @State private var options: [String] = ["Option 1", "Option 2", "Option 3"] // Example options
+    @State private var options: [String] = ["Option 1", "Option 2", "Option 3"]
+    @State private var isModalPresented = false
     let segments = ["D", "W", "M", "Y"]
     var body: some View {
             
@@ -43,7 +44,7 @@ struct DetailView: View {
                         .listRowSeparator(.hidden)
                         
                         Button(action: {
-                            print("Button tapped!")
+                            isModalPresented.toggle()
                         }) {
                             HStack {
                                 Spacer()
@@ -51,6 +52,9 @@ struct DetailView: View {
                                 Text("Add New Record")
                                 Spacer()
                             }
+                            .sheet(isPresented: $isModalPresented) {
+                                ModalView().presentationDetents([.height(235)])
+                                   }
                             .padding()
                             .background(Color("ButtonContainerBG"))
                             .foregroundColor(.blue)
@@ -104,6 +108,7 @@ struct DetailView: View {
                         }
                         
                         Text("chart").font(.system(size: 800))
+                            .listRowSeparator(.hidden)
                     }
                     
                     
@@ -118,13 +123,28 @@ struct DetailView: View {
 
       
     }
-        
-        
-        
-        
-        
-        
-//
+
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(
+            card: Card(id: UUID(), title: "Sample Card", detail: "Detail for Sample Card", date: Date(), weight: 100),
+            cards: [
+                Card(id: UUID(), title: "Sample Card 1", detail: "Detail for Sample Card 1", date: Date(), weight: 100),
+                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200),
+                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200)
+                
+            ]
+        )
+    }
+}
+
+private let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    return formatter
+}()
+
 //        NavigationView{
 //            ScrollView {
 //                Section {
@@ -139,7 +159,7 @@ struct DetailView: View {
 //                                Spacer()
 //                            }
 //                            Text("Last Updated \(card.date, formatter: dateFormatter)").font(.system(size: 15))
-//                            
+//
 //                            Button(action: {
 //                                print("Button tapped!")
 //                            }) {
@@ -162,7 +182,7 @@ struct DetailView: View {
 //                        .padding(10)
 //                        .cornerRadius(50)
 //                    }
-//                    
+//
 //                    NavigationView{
 //                        List{
 //                            HStack(alignment: .firstTextBaseline) {
@@ -180,7 +200,7 @@ struct DetailView: View {
 //                                Text("Your Progress").bold()
 //                            }
 //                            .foregroundColor(.orange)
-//                            
+//
 //                            Picker(selection: $selectedItem, label: Text("Options")) {
 //                                ForEach(0 ..< options.count, id: \.self) {
 //                                    Text(self.options[$0])
@@ -197,7 +217,7 @@ struct DetailView: View {
 //                        }
 //                        .pickerStyle(SegmentedPickerStyle())
 //                        .padding()
-//                        
+//
 //                        VStack {
 //                            HStack{
 //                                VStack{
@@ -212,15 +232,15 @@ struct DetailView: View {
 //                                    Text("\(card.weight) Kg")
 //                                }
 //                            }
-//                            
+//
 //                            Text("Ini Chart")
-//                            
+//
 //                        }
 //                        Spacer()
 //                    }.background(Color("ContainerColor"))
 //                        .padding(10)
 //                        .cornerRadius(50)
-//                    
+//
 //                }
 //                .padding(.bottom,1000)
 //                .background(Color("BackgroundBG"))
@@ -232,23 +252,3 @@ struct DetailView: View {
 //        }
 //    }
 //}
-
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(
-            card: Card(id: UUID(), title: "Sample Card", detail: "Detail for Sample Card", date: Date(), weight: 100),
-            cards: [
-                Card(id: UUID(), title: "Sample Card 1", detail: "Detail for Sample Card 1", date: Date(), weight: 100),
-                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200),
-                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200)
-                
-            ]
-        )
-    }
-}
-
-private let dateFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    return formatter
-}()
