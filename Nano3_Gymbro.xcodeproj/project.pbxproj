@@ -23,6 +23,12 @@
 		E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819872C3F8A9B008883D4 /* RouterViewModel.swift */; };
 		E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428198E2C3F9AD0008883D4 /* LineChartView.swift */; };
 		E42819942C3FA47C008883D4 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819932C3FA47C008883D4 /* RouterView.swift */; };
+		F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B28382C3FC8EF00DCF909 /* PRCardView.swift */; };
+		F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */; };
+		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
+		F8B69FC82C3FE1E600AC7670 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F8B69FC72C3FE1E600AC7670 /* SwiftUICharts */; };
+		F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC92C40285500AC7670 /* ChartData.swift */; };
+		F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,11 @@
 		E42819872C3F8A9B008883D4 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		E428198E2C3F9AD0008883D4 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		E42819932C3FA47C008883D4 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		F82B28382C3FC8EF00DCF909 /* PRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCardView.swift; sourceTree = "<group>"; };
+		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
+		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
+		F8B69FC92C40285500AC7670 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B69FC82C3FE1E600AC7670 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +175,8 @@
 		E428197D2C3F84D5008883D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8B69FC92C40285500AC7670 /* ChartData.swift */,
+				F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */,
 				E42819812C3F8870008883D4 /* Router.swift */,
 			);
 			path = Model;
@@ -171,6 +185,7 @@
 		E428197E2C3F84DB008883D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F82B28352C3FC8CB00DCF909 /* PRCard */,
 				E42819922C3FA46F008883D4 /* Router */,
 				E42819892C3F9A6F008883D4 /* LineChart */,
 				201418002C3F894600321022 /* RMCalculator */,
@@ -218,6 +233,16 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		F82B28352C3FC8CB00DCF909 /* PRCard */ = {
+			isa = PBXGroup;
+			children = (
+				F82B28382C3FC8EF00DCF909 /* PRCardView.swift */,
+				F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */,
+				F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */,
+			);
+			path = PRCard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +259,9 @@
 			dependencies = (
 			);
 			name = Nano3_Gymbro;
+			packageProductDependencies = (
+				F8B69FC72C3FE1E600AC7670 /* SwiftUICharts */,
+			);
 			productName = Nano3_Gymbro;
 			productReference = E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */;
 			productType = "com.apple.product-type.application";
@@ -307,6 +335,9 @@
 				ar,
 			);
 			mainGroup = E42819472C3BA5EF008883D4;
+			packageReferences = (
+				F8B69FC62C3FE0A000AC7670 /* XCRemoteSwiftPackageReference "chartview" */,
+			);
 			productRefGroup = E42819512C3BA5EF008883D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -353,9 +384,14 @@
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E42819822C3F8870008883D4 /* Router.swift in Sources */,
+				F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
+				F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */,
+				F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */,
+				F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
+				F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */,
 				E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */,
 				201418042C3F8A9600321022 /* RMInputView.swift in Sources */,
 				201418082C40439100321022 /* RMResultView.swift in Sources */,
@@ -531,7 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +597,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -691,6 +727,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8B69FC62C3FE0A000AC7670 /* XCRemoteSwiftPackageReference "chartview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apppear/chartview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8B69FC72C3FE1E600AC7670 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B69FC62C3FE0A000AC7670 /* XCRemoteSwiftPackageReference "chartview" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E42819482C3BA5EF008883D4 /* Project object */;
 }
