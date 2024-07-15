@@ -1,7 +1,332 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
 
+    },
+    "% of 1RM" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lf" : {
+
+    },
+    "%lf Kg" : {
+
+    },
+    "%lld" : {
+
+    },
+    "1RM Calculator" : {
+
+    },
+    "Add to Progress" : {
+
+    },
+    "Calculate" : {
+
+    },
+    "Calculator" : {
+
+    },
+    "Exercise" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Kg" : {
+
+    },
+    "Reps" : {
+
+    },
+    "Results" : {
+
+    },
+    "Sets" : {
+
+    },
+    "Volume" : {
+
+    },
+    "Weight" : {
+
+    },
+    "Your 1RM is .." : {
+
+    }    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld.0 Kg" : {
+
+    },
+    "0" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٠"
+          }
+        }
+      }
+    },
+    "1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "١"
+          }
+        }
+      }
+    },
+    "2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٢"
+          }
+        }
+      }
+    },
+    "3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٣"
+          }
+        }
+      }
+    },
+    "4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٤"
+          }
+        }
+      }
+    },
+    "5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٥"
+          }
+        }
+      }
+    },
+    "6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٦"
+          }
+        }
+      }
+    },
+    "7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٧"
+          }
+        }
+      }
+    },
+    "8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٨"
+          }
+        }
+      }
+    },
+    "9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "٩"
+          }
+        }
+      }
+    },
+    "Add New Exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة سجل جديد"
+          }
+        }
+      }
+    },
+    "Add New Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة سجل جديد"
+          }
+        }
+      }
+    },
+    "Angkat Galon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ضغط الصدر"
+          }
+        }
+      }
+    },
+    "Bench Press" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرفع الأرضي"
+          }
+        }
+      }
+    },
+    "chart" : {
+
+    },
+    "Deadlift" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ضغط الصدر"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Kg" : {
+
+    },
+    "Last" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ"
+          }
+        }
+      }
+    },
+    "Last Updated %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ آخر تحديث"
+          }
+        }
+      }
+    },
+    "New Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل جديد"
+          }
+        }
+      }
+    },
+    "Personal Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السجل الشخصي"
+          }
+        }
+      }
+    },
+    "Segments" : {
+
+    },
+    "Squat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرفع الأرضي"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آخر"
+          }
+        }
+      }
+    },
+    "Weight Lift" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن"
+          }
+        }
+      }
+    },
+    "Your Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقدمك"
+          }
+        }
+      }
+    }
   },
   "version" : "1.0"
 }
