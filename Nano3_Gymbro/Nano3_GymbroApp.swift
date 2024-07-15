@@ -12,6 +12,6 @@ struct Nano3_GymbroApp: App {
     var body: some Scene {
         WindowGroup {
             RMCalculatorView()
-        }
+        }.modelContainer(for: [ExerciseName.self, ExercisePR.self, ExerciseRM.self])
     }
 }
