@@ -27,8 +27,6 @@
 		E4A8AFB62C44E84700EAC5B9 /* ExerciseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */; };
 		E4A8AFB72C44E84700EAC5B9 /* ExerciseRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */; };
 		E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */; };
-		E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */; };
-		E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */; };
 		E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBD2C44E89500EAC5B9 /* \.swift */; };
 		E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */; };
 		E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */; };
@@ -86,8 +84,6 @@
 		E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseName.swift; sourceTree = "<group>"; };
 		E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRM.swift; sourceTree = "<group>"; };
 		E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePR.swift; sourceTree = "<group>"; };
-		E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
-		E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineChartView.storyboard; sourceTree = "<group>"; };
 		E4A8AFBD2C44E89500EAC5B9 /* \.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\\.swift"; sourceTree = "<group>"; };
 		E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRView.swift; sourceTree = "<group>"; };
 		E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
@@ -256,8 +252,6 @@
 		E42819892C3F9A6F008883D4 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */,
-				E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */,
 				E428198E2C3F9AD0008883D4 /* LineChartView.swift */,
 			);
 			path = LineChart;
@@ -422,9 +416,7 @@
 			files = (
 				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
 				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
-				E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */,
 				20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */,
-				E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
