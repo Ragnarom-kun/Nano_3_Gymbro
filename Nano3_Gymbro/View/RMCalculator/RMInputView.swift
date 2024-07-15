@@ -16,6 +16,8 @@ struct RMInputView: View {
     @State var openedPicker: String = ""
     @State var isWeightPickerExpanded: Bool = false
 
+    @Binding var unit: String
+
     var exerciseDummy = ["Bench Press", "Squat", "Deadlift"]
 
     var body: some View {
@@ -33,8 +35,16 @@ struct RMInputView: View {
                 DisclosureGroup(
                     content: {
                         Picker("", selection: $weight) {
-                            ForEach(5 ... 300, id: \.self) { weight in
-                                Text("\(weight)").tag(weight)
+                            ForEach(5 ... 300, id: \.self) { kgWeight in
+                                // Convert kg to lb
+                                let lbWeight = Measurement(value: Double(kgWeight), unit: UnitMass.kilograms)
+                                    .converted(to: .pounds)
+                                    .value
+                                if unit == "Kg" {
+                                    Text("\(Int(kgWeight)) Kg").tag(kgWeight)
+                                } else {
+                                    Text("\(Int(lbWeight)) lb").tag(kgWeight)
+                                }
                             }
                         }
                         .frame(maxWidth: .infinity)
@@ -46,8 +56,7 @@ struct RMInputView: View {
                         Spacer()
                     }
                 )
-
-                .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(weight)")))
+                .disclosureGroupStyle(CustomDisclosureGroupStyle(button: unit == "Kg" ? Text("\(Int(weight)) kg") : Text("\(Int(Measurement(value: Double(weight), unit: UnitMass.kilograms).converted(to: .pounds).value)) lb")))
             }
 
             VStack {
@@ -67,7 +76,6 @@ struct RMInputView: View {
                         Spacer()
                     }
                 )
-
                 .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(reps)")))
             }
 
@@ -88,7 +96,6 @@ struct RMInputView: View {
                         Spacer()
                     }
                 )
-
                 .disclosureGroupStyle(CustomDisclosureGroupStyle(button: Text("\(sets)")))
             }
 
@@ -103,7 +110,7 @@ struct RMInputView: View {
             }
 
             Button(action: {
-                viewModel.calculateRM(weight: Double(weight), reps: Double(reps), sets: Double(sets))
+                viewModel.calculateRM(weight: Double(weight), reps: Double(reps), sets: Double(sets), unit: unit)
             }, label: {
                 Text("Calculate")
                     .frame(maxWidth: .infinity)
@@ -140,5 +147,5 @@ struct CustomDisclosureGroupStyle<Label: View>: DisclosureGroupStyle {
 }
 
 #Preview {
-    RMInputView()
+    RMInputView(unit: .constant("Kg"))
 }
