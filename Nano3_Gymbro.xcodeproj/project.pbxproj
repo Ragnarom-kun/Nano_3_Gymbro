@@ -23,6 +23,19 @@
 		E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819872C3F8A9B008883D4 /* RouterViewModel.swift */; };
 		E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428198E2C3F9AD0008883D4 /* LineChartView.swift */; };
 		E42819942C3FA47C008883D4 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819932C3FA47C008883D4 /* RouterView.swift */; };
+		E4A8AFB62C44E84700EAC5B9 /* ExerciseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */; };
+		E4A8AFB72C44E84700EAC5B9 /* ExerciseRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */; };
+		E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */; };
+		E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */; };
+		E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */; };
+		E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBD2C44E89500EAC5B9 /* \.swift */; };
+		E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */; };
+		E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */; };
+		E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */; };
+		E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC52C44E95E00EAC5B9 /* WhatRPEView.swift */; };
+		E4A8AFCD2C44E96500EAC5B9 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */; };
+		E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */; };
+		E4A8AFCF2C44E96500EAC5B9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */; };
 		F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B28382C3FC8EF00DCF909 /* PRCardView.swift */; };
 		F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */; };
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
@@ -68,6 +81,19 @@
 		E42819872C3F8A9B008883D4 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		E428198E2C3F9AD0008883D4 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		E42819932C3FA47C008883D4 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseName.swift; sourceTree = "<group>"; };
+		E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRM.swift; sourceTree = "<group>"; };
+		E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePR.swift; sourceTree = "<group>"; };
+		E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
+		E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineChartView.storyboard; sourceTree = "<group>"; };
+		E4A8AFBD2C44E89500EAC5B9 /* \.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\\.swift"; sourceTree = "<group>"; };
+		E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRView.swift; sourceTree = "<group>"; };
+		E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
+		E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressiveOverloadPlanView.swift; sourceTree = "<group>"; };
+		E4A8AFC52C44E95E00EAC5B9 /* WhatRPEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatRPEView.swift; sourceTree = "<group>"; };
+		E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
+		E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
+		E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		F82B28382C3FC8EF00DCF909 /* PRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCardView.swift; sourceTree = "<group>"; };
 		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
@@ -175,6 +201,9 @@
 		E428197D2C3F84D5008883D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */,
+				E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */,
+				E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */,
 				F8B69FC92C40285500AC7670 /* ChartData.swift */,
 				F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */,
 				E42819812C3F8870008883D4 /* Router.swift */,
@@ -185,6 +214,9 @@
 		E428197E2C3F84DB008883D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8AFCC2C44E96500EAC5B9 /* Exercise */,
+				E4A8AFC62C44E95E00EAC5B9 /* ProgressiveOverload */,
+				E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */,
 				F82B28352C3FC8CB00DCF909 /* PRCard */,
 				E42819922C3FA46F008883D4 /* Router */,
 				E42819892C3F9A6F008883D4 /* LineChart */,
@@ -196,6 +228,7 @@
 		E428197F2C3F84E0008883D4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8AFC22C44E8CD00EAC5B9 /* Exercise */,
 				E42819862C3F8A8D008883D4 /* Router */,
 				201418052C403C1100321022 /* RMCalculatorViewModel.swift */,
 			);
@@ -220,6 +253,8 @@
 		E42819892C3F9A6F008883D4 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */,
+				E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */,
 				E428198E2C3F9AD0008883D4 /* LineChartView.swift */,
 			);
 			path = LineChart;
@@ -233,9 +268,37 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		E4A8AFC22C44E8CD00EAC5B9 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		E4A8AFC62C44E95E00EAC5B9 /* ProgressiveOverload */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */,
+				E4A8AFC52C44E95E00EAC5B9 /* WhatRPEView.swift */,
+			);
+			path = ProgressiveOverload;
+			sourceTree = "<group>";
+		};
+		E4A8AFCC2C44E96500EAC5B9 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */,
+				E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */,
+				E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
 		F82B28352C3FC8CB00DCF909 /* PRCard */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8AFBD2C44E89500EAC5B9 /* \.swift */,
 				F82B28382C3FC8EF00DCF909 /* PRCardView.swift */,
 				F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */,
 				F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */,
@@ -356,7 +419,9 @@
 			files = (
 				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
 				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
+				E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */,
 				20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */,
+				E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,12 +447,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
+				E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E42819822C3F8870008883D4 /* Router.swift in Sources */,
+				E4A8AFCD2C44E96500EAC5B9 /* AddExerciseView.swift in Sources */,
+				E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */,
 				F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
+				E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */,
+				E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */,
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
+				E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */,
+				E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */,
+				E4A8AFCF2C44E96500EAC5B9 /* InputView.swift in Sources */,
+				E4A8AFB62C44E84700EAC5B9 /* ExerciseName.swift in Sources */,
+				E4A8AFB72C44E84700EAC5B9 /* ExerciseRM.swift in Sources */,
 				F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */,
+				E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */,
 				F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */,
 				F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
