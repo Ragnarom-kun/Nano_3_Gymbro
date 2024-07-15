@@ -16,6 +16,7 @@ struct Customer: Identifiable {
 
 struct RMResultView: View {
     @EnvironmentObject var viewModel: RMCalculatorViewModel
+    @Binding var unit: String
     let percentages = [96, 92, 89, 86, 84, 81, 79, 76, 74, 71, 68]
 
     var body: some View {
@@ -39,10 +40,10 @@ struct RMResultView: View {
                         .font(.subheadline)
                         .bold()
                     HStack(alignment: .bottom) {
-                        Text("\(formatDoubletoString(viewModel.oneRepMax))")
+                        Text("\(changeUnit(viewModel.oneRepMax, unit))")
                             .font(.largeTitle)
                             .bold()
-                        Text("Kg")
+                        Text("\(unit)")
                             .font(.subheadline)
                             .bold()
                     }
@@ -75,13 +76,13 @@ struct RMResultView: View {
                     .hidden()
 
                 ForEach(2 ... 12, id: \.self) { item in
-                    let weight = viewModel.calculateRMPercentWeight(percentage: percentages[item-2])
+                    let weight = viewModel.calculateRMPercentWeight(percentage: percentages[item - 2])
 
                     GridRow {
                         Text("\(item)")
-                        Text("\(formatDoubletoString(weight))")
-                        Text("\(percentages[item-2])")
-                        Text("\(formatDoubletoString(viewModel.calculateVolume(weight: weight))) Kg")
+                        Text("\(changeUnit(weight, unit)) \(unit)")
+                        Text("\(percentages[item - 2])")
+                        Text("\(changeUnit(viewModel.calculateVolume(weight: weight), unit)) \(unit)")
                     }
                     .font(.subheadline)
                     .fontWeight(.regular)
@@ -94,6 +95,6 @@ struct RMResultView: View {
 }
 
 #Preview {
-    RMResultView()
+    RMResultView(unit: .constant("Kg"))
         .environmentObject(RMCalculatorViewModel())
 }
