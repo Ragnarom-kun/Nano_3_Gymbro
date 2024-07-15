@@ -7,6 +7,7 @@ struct ExerciseListView: View {
     @EnvironmentObject var viewModel: ExerciseViewModel
     @Binding var navigateToContentView: Bool
     @State private var showSheet = false
+    @State private var showDetails = false
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -24,12 +25,14 @@ struct ExerciseListView: View {
                             .onTapGesture {
                                 viewModel.setActiveExercise(exercise, context: context)
                                 navigateToContentView = true
+                                viewModel.setShowDetails(false)
                                 presentationMode.wrappedValue.dismiss()
-                                
                             }
                             .swipeActions(edge: .leading) {
                                 Button(role: .destructive) {
                                     viewModel.deleteItem(exercise, context: context)
+                                    viewModel.setShowDetails(false)
+                                    print("ShowDetails: \(viewModel.showDetails)")
                                 } label: {
                                     Label("Delete", systemImage: "trash")
                                 }
@@ -38,7 +41,8 @@ struct ExerciseListView: View {
                         .listRowBackground(Color.clear)
                     }
                 }
-                .listStyle(PlainListStyle())            }
+                .listStyle(PlainListStyle())           
+            }
             .navigationTitle("Exercise Type")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
