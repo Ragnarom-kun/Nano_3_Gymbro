@@ -10,13 +10,26 @@
     "%@" : {
 
     },
-    "%lf" : {
-
-    },
-    "%lf Kg" : {
-
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
     },
     "%lld" : {
+
+    },
+    "%lld kg" : {
+
+    },
+    "%lld Kg" : {
+
+    },
+    "%lld lb" : {
 
     },
     "1RM Calculator" : {
@@ -34,10 +47,7 @@
     "Exercise" : {
 
     },
-    "Hello, world!" : {
-
-    },
-    "Kg" : {
+    "Hello, World!" : {
 
     },
     "Reps" : {

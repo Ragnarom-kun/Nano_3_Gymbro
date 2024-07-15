@@ -10,7 +10,7 @@ import SwiftUI
 struct RMCalculatorView: View {
     @StateObject var viewModel = RMCalculatorViewModel()
     @State var selectedUnits = "Kg"
-    var units = ["Kg", "lb"]
+    @State var units = ["Kg", "lb"]
 
     var body: some View {
         List {
@@ -43,9 +43,9 @@ struct RMCalculatorView: View {
             .listRowBackground(Color.clear)
             .listRowInsets(EdgeInsets())
 
-            RMInputView()
+            RMInputView(unit: $selectedUnits)
 
-            RMResultView()
+            RMResultView(unit: $selectedUnits)
         }
         .listStyle(InsetGroupedListStyle())
         .frame(maxWidth: .infinity, maxHeight: .infinity)
