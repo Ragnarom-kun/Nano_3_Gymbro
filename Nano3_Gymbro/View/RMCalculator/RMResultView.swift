@@ -39,7 +39,7 @@ struct RMResultView: View {
                         .font(.subheadline)
                         .bold()
                     HStack(alignment: .bottom) {
-                        Text("\(viewModel.oneRepMax)")
+                        Text("\(formatDoubletoString(viewModel.oneRepMax))")
                             .font(.largeTitle)
                             .bold()
                         Text("Kg")
@@ -79,9 +79,9 @@ struct RMResultView: View {
 
                     GridRow {
                         Text("\(item)")
-                        Text("\(weight)")
+                        Text("\(formatDoubletoString(weight))")
                         Text("\(percentages[item-2])")
-                        Text("\(viewModel.calculateVolume(weight: weight)) Kg")
+                        Text("\(formatDoubletoString(viewModel.calculateVolume(weight: weight))) Kg")
                     }
                     .font(.subheadline)
                     .fontWeight(.regular)
