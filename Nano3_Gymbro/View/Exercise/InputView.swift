@@ -28,7 +28,7 @@ struct InputView: View {
 
                 Button(action: {
                     if let selectedExercise = viewModel.activeExercise {
-                        viewModel.addArray(item: selectedExercise, PR: PR, RM: RM, context: context)
+//                        viewModel.addArray(item: selectedExercise, PR: PR, RM: RM, context: context)
                     }
                 }) {
                     Text("Add RM and PR to Exercise")

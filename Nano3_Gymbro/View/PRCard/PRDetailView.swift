@@ -6,15 +6,17 @@
 //
 import SwiftUI
 import SwiftUICharts
+import SwiftData
 
 struct DetailView: View {
-    let card: Card
-    let cards: [Card]
+    var exerciseName: ExerciseName
+    @StateObject var viewModel = ExerciseViewModel()
     @State private var selectedItem = 0
     @State private var selection = 0
     @State private var options: [String] = ["Option 1", "Option 2", "Option 3"]
     @State private var isModalPresented = false
     let segments = ["D", "W", "M", "Y"]
+  
     var body: some View {
             
             Section {
@@ -30,7 +32,7 @@ struct DetailView: View {
                         
                         HStack(alignment: .firstTextBaseline) {
                             Spacer()
-                            Text("\(card.weight)").font(.system(size: 34)).bold()
+                            Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))").font(.system(size: 34)).bold()
                             Text("Kg").font(.system(size: 15))
                             Spacer()
                         }
@@ -38,7 +40,7 @@ struct DetailView: View {
                         
                         HStack {
                             Spacer()
-                            Text("Last Updated \(card.date, formatter: dateFormatter)").font(.system(size: 15)).fontWeight(.thin)
+                            Text("Last Update: \(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
                             Spacer()
                         }
                         .listRowSeparator(.hidden)
@@ -53,7 +55,7 @@ struct DetailView: View {
                                 Spacer()
                             }
                             .sheet(isPresented: $isModalPresented) {
-                                ModalView().presentationDetents([.height(235)])
+                                ModalView(exerciseName: exerciseName, viewModel: viewModel).presentationDetents([.height(235)])
                                    }
                             .padding()
                             .background(Color("ButtonContainerBG"))
@@ -70,12 +72,7 @@ struct DetailView: View {
                             Image(systemName: "flame")
                             Text("Your Progress").bold()
                             Spacer()
-                            Picker(selection: $selectedItem, label: Text("")) {
-                                ForEach(0 ..< options.count, id: \.self) {
-                                    Text(self.options[$0])
-                                }
-                            }
-                            .pickerStyle(MenuPickerStyle())
+    
                             .frame(maxWidth: 150)
                         }
                         .foregroundColor(.orange)
@@ -93,14 +90,14 @@ struct DetailView: View {
                             Spacer()
                             VStack {
                                 Text("Start").foregroundColor(.blue)
-                                Text("\(card.weight).0 Kg")
+                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.first!.value))Kg")
                             }
                             Divider()
                                 .background(Color.gray)
                                 .frame(height: 30)
                             VStack {
                                 Text("Last").foregroundColor(.blue)
-                                Text("\(card.weight).0 Kg")
+                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))Kg")
                                 
                                
                             }
@@ -114,30 +111,12 @@ struct DetailView: View {
                     
                 }
                  
-            }.navigationTitle("Personal Record")
-                
-            .onAppear {
-                            self.options = cards.map { $0.title }
-                        }
+            }.navigationTitle("\(exerciseName.name)")
             }
 
       
     }
 
-
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView(
-            card: Card(id: UUID(), title: "Sample Card", detail: "Detail for Sample Card", date: Date(), weight: 100),
-            cards: [
-                Card(id: UUID(), title: "Sample Card 1", detail: "Detail for Sample Card 1", date: Date(), weight: 100),
-                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200),
-                Card(id: UUID(), title: "Sample Card 2", detail: "Detail for Sample Card 2", date: Date(), weight: 200)
-                
-            ]
-        )
-    }
-}
 
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()

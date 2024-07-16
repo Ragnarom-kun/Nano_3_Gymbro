@@ -6,20 +6,26 @@
 //
 
 import SwiftUI
+import SwiftData
 
 
 struct ModalView: View {
+    @Environment(\.modelContext) public var context
+    @State var exerciseName: ExerciseName
     @Environment(\.presentationMode) var presentationMode
-    @State private var textFieldValue: String = ""
-    
+    var viewModel: ExerciseViewModel
+    @State private var weight: Double = 0.0
     var body: some View {
+     
         VStack {
             Spacer()
             HStack(alignment:.center){
                 Text("New Record") .foregroundColor(Color("FontColor"))
                 Spacer()
                 Button(action: {
+                    
                     presentationMode.wrappedValue.dismiss()
+                    
                 }){
                     Image(systemName: "xmark.circle.fill").foregroundColor(.gray)
                 }
@@ -27,19 +33,25 @@ struct ModalView: View {
             
             
             VStack {
-                HStack{
-                    Spacer()
-                    Text("Weight Lift")
-                    TextField("0", text: $textFieldValue)
-                        .textFieldStyle(PlainTextFieldStyle())
-                    Spacer()
-                    Text("Kg")
-                }.padding(20)
+                HStack {
+                                Spacer()
+                                Text("Weight Lift")
+                                TextField("0", value: $weight, formatter: NumberFormatter())
+                        .textFieldStyle(PlainTextFieldStyle()).fontWeight(.thin)
+                                Spacer()
+                                Text("Kg")
+                }.foregroundColor(Color("FontColor"))
+                            .padding(20)
                 
                 HStack {
                     Spacer()
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                        print("exerciseName: \(exerciseName.name)")
+                        if(weight > exerciseName.sortedListPR.last!.value){
+                            viewModel.addArrayPR(item: exerciseName, PR: weight, context: context)
+                        }
+                       
+                 
                     }){
                         Text("Add New Exercise").foregroundColor(Color(.white)).padding(.horizontal,90)
                             .padding(.vertical, 14)
@@ -65,8 +77,4 @@ struct ModalView: View {
       
 }
 
-struct ModalView_Previews: PreviewProvider {
-    static var previews: some View {
-        ModalView()
-    }
-}
+
