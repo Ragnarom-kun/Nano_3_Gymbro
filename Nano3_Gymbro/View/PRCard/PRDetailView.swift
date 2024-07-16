@@ -5,7 +5,7 @@
 //  Created by Christian Gunawan on 11/07/24.
 //
 import SwiftUI
-import SwiftUICharts
+//import SwiftUICharts
 import SwiftData
 
 struct DetailView: View {

@@ -62,7 +62,7 @@ struct ExerciseListView: View {
                     }
                 }
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
 }
 
