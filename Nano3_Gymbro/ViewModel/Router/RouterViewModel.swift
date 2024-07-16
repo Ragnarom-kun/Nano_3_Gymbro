@@ -23,20 +23,20 @@ class Router: ObservableObject {
         case .ExerciseListView:
             ExerciseListView()
         }
-        
-        // Used by views to navigate to another view
-        func navigateTo(_ appRoute: Route) {
-            path.append(appRoute)
-        }
-        
-        // Used to go back to the previous screen
-        func navigateBack() {
-            path.removeLast()
-        }
-        
-        // Pop to the root screen in our hierarchy
-        func popToRoot() {
-            path.removeLast(path.count)
-        }
+    }
+    
+    // Used by views to navigate to another view
+    func navigateTo(_ appRoute: Route) {
+        path.append(appRoute)
+    }
+    
+    // Used to go back to the previous screen
+    func navigateBack() {
+        path.removeLast()
+    }
+    
+    // Pop to the root screen in our hierarchy
+    func popToRoot() {
+        path.removeLast(path.count)
     }
 }
