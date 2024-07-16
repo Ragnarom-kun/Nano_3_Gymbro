@@ -15,9 +15,13 @@ struct PRCardView: View {
     ]
 
     var body: some View {
-        NavigationView {
-            VStack {
-                ScrollView {
+        
+        if exercises.isEmpty{
+            Text("No Data Avaible").foregroundColor(Color("FontColor"))
+        }
+            NavigationView {
+                VStack {
+                    ScrollView{
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
                         ForEach(exercises) { exercise in
                             NavigationLink(destination: DetailView(exerciseName: exercise)) {
@@ -37,8 +41,6 @@ struct PRCardView: View {
 
 struct CardView: View {
     let exerciseName: ExerciseName
-    // let exerciseValue: ExerciseName
-
     @EnvironmentObject var viewModel: ExerciseViewModel
 
     var body: some View {
@@ -48,18 +50,23 @@ struct CardView: View {
                 Text(exerciseName.name)
                 Spacer()
             }.foregroundColor(.orange)
-                .lineLimit(1)
-                .truncationMode(.tail)
-            HStack(alignment: .firstTextBaseline) {
-                Text("\(String(format: "%.1f", exerciseName.sortedListPR.last?.value ?? 0.0))").font(.system(size: 34)).bold()
-                Text("Kg")
-            }
-
-            if exerciseName.sortedListPR.last?.date != nil {
-                Text("\(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
-            } else {
-                Text("-").fontWeight(.thin)
-            }
+            .lineLimit(1)
+            .truncationMode(.tail)
+            
+            if let lastPR = exerciseName.sortedListPR.last {
+                  HStack(alignment: .firstTextBaseline) {
+                      Text("\(String(format: "%.1f", lastPR.value))").font(.system(size: 34)).bold()
+                      Text("Kg")
+                  }
+                  Text("\(lastPR.date, formatter: dateFormatter)").fontWeight(.thin)
+              } else {
+                  HStack(alignment: .firstTextBaseline) {
+                      Text("0").font(.system(size: 34)).bold()
+                      Text("Kg")
+                  }
+                  Text("-").fontWeight(.thin)
+              }
+    
         }
         .font(.headline)
         .padding()
