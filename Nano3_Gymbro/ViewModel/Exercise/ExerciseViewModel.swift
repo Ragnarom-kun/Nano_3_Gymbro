@@ -26,8 +26,20 @@ class ExerciseViewModel: ObservableObject{
         context.delete(item)
     }
     
-    func addArray(item: ExerciseName, PR: Double, RM: Double, context: ModelContext){
+//    func addArray(item: ExerciseName, PR: Double, RM: Double, context: ModelContext){
+//        item.listPR.append(ExercisePR(value: PR, id: UUID().uuidString, date: Date()))
+//        item.listRM.append(ExerciseRM(value: RM, id: UUID().uuidString, date: Date()))
+//        
+//        if(item.RMBest < RM){
+//            item.RMBest = RM
+//        }
+//    }
+    
+    func addArrayPR(item: ExerciseName, PR: Double, context: ModelContext){
         item.listPR.append(ExercisePR(value: PR, id: UUID().uuidString, date: Date()))
+    }
+    
+    func addArrayRM(item: ExerciseName, RM: Double, context: ModelContext){
         item.listRM.append(ExerciseRM(value: RM, id: UUID().uuidString, date: Date()))
         
         if(item.RMBest < RM){
