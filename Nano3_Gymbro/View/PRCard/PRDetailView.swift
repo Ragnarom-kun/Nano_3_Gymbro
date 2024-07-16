@@ -5,7 +5,8 @@
 //  Created by Christian Gunawan on 11/07/24.
 //
 import SwiftUI
-//import SwiftUICharts
+
+// import SwiftUICharts
 import SwiftData
 
 struct DetailView: View {
@@ -16,107 +17,103 @@ struct DetailView: View {
     @State private var options: [String] = ["Option 1", "Option 2", "Option 3"]
     @State private var isModalPresented = false
     let segments = ["D", "W", "M", "Y"]
-  
+
     var body: some View {
-            
-            Section {
-                List {
-                    Section {
+        Section {
+            List {
+                Section {
+                    Spacer()
+                    HStack {
                         Spacer()
-                        HStack {
-                            Spacer()
-                            Image(systemName: "dumbbell.fill").foregroundColor(.orange).font(.system(size: 80))
-                            Spacer()
-                        }
-                        .listRowSeparator(.hidden)
-                        
-                        HStack(alignment: .firstTextBaseline) {
-                            Spacer()
-                            Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))").font(.system(size: 34)).bold()
-                            Text("Kg").font(.system(size: 15))
-                            Spacer()
-                        }
-                        .listRowSeparator(.hidden)
-                        
-                        HStack {
-                            Spacer()
+                        Image(systemName: "dumbbell.fill").foregroundColor(.orange).font(.system(size: 80))
+                        Spacer()
+                    }
+                    .listRowSeparator(.hidden)
+
+                    HStack(alignment: .firstTextBaseline) {
+                        Spacer()
+                        Text("\(String(format: "%.1f", exerciseName.sortedListPR.last?.value ?? 0.0))").font(.system(size: 34)).bold()
+                        Text("Kg").font(.system(size: 15))
+                        Spacer()
+                    }
+                    .listRowSeparator(.hidden)
+
+                    HStack {
+                        Spacer()
+                        if exerciseName.sortedListPR.last?.date != nil {
                             Text("Last Update: \(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
-                            Spacer()
+                        } else {
+                            Text("-").fontWeight(.thin)
                         }
-                        .listRowSeparator(.hidden)
-                        
-                        Button(action: {
-                            isModalPresented.toggle()
-                        }) {
-                            HStack {
-                                Spacer()
-                                Image(systemName: "square.and.pencil")
-                                Text("Add New Record")
-                                Spacer()
-                            }
-                            .sheet(isPresented: $isModalPresented) {
-                                ModalView(exerciseName: exerciseName, viewModel: viewModel).presentationDetents([.height(235)])
-                                   }
-                            .padding()
-                            .background(Color("ButtonContainerBG"))
-                            .foregroundColor(.blue)
-                            .font(.headline)
-                            .cornerRadius(10)
-                            .padding()
-                        }
-                        .listRowSeparator(.hidden)
+                        Spacer()
                     }
-                    
-                    Section {
-                        HStack(alignment: .firstTextBaseline) {
-                            Image(systemName: "flame")
-                            Text("Your Progress").bold()
-                            Spacer()
-    
-                            .frame(maxWidth: 150)
-                        }
-                        .foregroundColor(.orange)
-                        
-                        Picker(selection: $selection, label: Text("Segments")) {
-                            ForEach(0 ..< segments.count) { index in
-                                Text(self.segments[index])
-                                    .tag(index)
-                            }
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        .listRowSeparator(.hidden)
-                        
+                    .listRowSeparator(.hidden)
+
+                    Button(action: {
+                        isModalPresented.toggle()
+                    }) {
                         HStack {
                             Spacer()
-                            VStack {
-                                Text("Start").foregroundColor(.blue)
-                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.first!.value))Kg")
-                            }
-                            Divider()
-                                .background(Color.gray)
-                                .frame(height: 30)
-                            VStack {
-                                Text("Last").foregroundColor(.blue)
-                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))Kg")
-                                
-                               
-                            }
+                            Image(systemName: "square.and.pencil")
+                            Text("Add New Record")
                             Spacer()
                         }
-                        
-                        Text("chart").font(.system(size: 800))
-                            .listRowSeparator(.hidden)
+                        .sheet(isPresented: $isModalPresented) {
+                            ModalView(exerciseName: exerciseName, viewModel: viewModel).presentationDetents([.height(235)])
+                        }
+                        .padding()
+                        .background(Color("ButtonContainerBG"))
+                        .foregroundColor(.blue)
+                        .font(.headline)
+                        .cornerRadius(10)
+                        .padding()
                     }
-                    
-                    
+                    .listRowSeparator(.hidden)
                 }
-                 
-            }.navigationTitle("\(exerciseName.name)")
+
+                Section {
+                    HStack(alignment: .firstTextBaseline) {
+                        Image(systemName: "flame")
+                        Text("Your Progress").bold()
+                        Spacer()
+
+                            .frame(maxWidth: 150)
+                    }
+                    .foregroundColor(.orange)
+
+                    Picker(selection: $selection, label: Text("Segments")) {
+                        ForEach(0 ..< segments.count) { index in
+                            Text(self.segments[index])
+                                .tag(index)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .listRowSeparator(.hidden)
+
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Text("Start").foregroundColor(.blue)
+                            Text("\(String(format: "%.1f", exerciseName.sortedListPR.first!.value))Kg")
+                        }
+                        Divider()
+                            .background(Color.gray)
+                            .frame(height: 30)
+                        VStack {
+                            Text("Last").foregroundColor(.blue)
+                            Text("\(String(format: "%.1f", exerciseName.sortedListPR.last!.value))Kg")
+                        }
+                        Spacer()
+                    }
+
+                    Text("chart").font(.system(size: 800))
+                        .listRowSeparator(.hidden)
+                }
             }
 
-      
+        }.navigationTitle("\(exerciseName.name)")
     }
-
+}
 
 private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
@@ -230,4 +227,4 @@ private let dateFormatter: DateFormatter = {
 //            }
 //        }
 //    }
-//}
+// }
