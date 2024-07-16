@@ -12,7 +12,6 @@
 		201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418052C403C1100321022 /* RMCalculatorViewModel.swift */; };
 		201418082C40439100321022 /* RMResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418072C40439100321022 /* RMResultView.swift */; };
 		20584DB42C44DBD800B482F4 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20584DB32C44DBD800B482F4 /* Formatter.swift */; };
-		20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */; };
 		E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */; };
 		E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819552C3BA5EF008883D4 /* ContentView.swift */; };
 		E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42819572C3BA5F0008883D4 /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 		E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */; };
 		E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */; };
 		E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */; };
-		E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBD2C44E89500EAC5B9 /* \.swift */; };
 		E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */; };
 		E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */; };
 		E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */; };
@@ -68,7 +66,6 @@
 		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/View/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
 		201418072C40439100321022 /* RMResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultView.swift; sourceTree = "<group>"; };
 		20584DB32C44DBD800B482F4 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = Nano3_Gymbro/View/RMCalculator/Formatter.swift; sourceTree = SOURCE_ROOT; };
-		20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroApp.swift; sourceTree = "<group>"; };
 		E42819552C3BA5EF008883D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,7 +85,6 @@
 		E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePR.swift; sourceTree = "<group>"; };
 		E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
 		E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineChartView.storyboard; sourceTree = "<group>"; };
-		E4A8AFBD2C44E89500EAC5B9 /* \.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\\.swift"; sourceTree = "<group>"; };
 		E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRView.swift; sourceTree = "<group>"; };
 		E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressiveOverloadPlanView.swift; sourceTree = "<group>"; };
@@ -142,7 +138,6 @@
 		E42819472C3BA5EF008883D4 = {
 			isa = PBXGroup;
 			children = (
-				20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */,
 				E42819522C3BA5EF008883D4 /* Nano3_Gymbro */,
 				E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */,
 				E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */,
@@ -301,7 +296,6 @@
 		F82B28352C3FC8CB00DCF909 /* PRCard */ = {
 			isa = PBXGroup;
 			children = (
-				E4A8AFBD2C44E89500EAC5B9 /* \.swift */,
 				F82B28382C3FC8EF00DCF909 /* PRCardView.swift */,
 				F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */,
 				F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */,
@@ -423,7 +417,6 @@
 				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
 				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
 				E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */,
-				20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */,
 				E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +452,6 @@
 				F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */,
-				E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */,
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
 				E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */,
 				E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */,
@@ -647,7 +639,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +669,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
