@@ -44,7 +44,6 @@ struct WhatRPEView: View {
                 HStack{
                     Text("RPE")
                         .foregroundStyle(Color.blue)
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 25)
                         .foregroundColor(.clear)
@@ -54,7 +53,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("10")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 38)
                         .foregroundColor(.clear)
@@ -63,7 +61,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("9.5")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 32)
                         .foregroundColor(.clear)
@@ -72,7 +69,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("9")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -81,7 +77,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("8.5")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 32)
                         .foregroundColor(.clear)
@@ -90,7 +85,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("8")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -99,7 +93,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("7.5")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 32)
                         .foregroundColor(.clear)
@@ -108,7 +101,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("7")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -117,7 +109,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("6.5")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 32)
                         .foregroundColor(.clear)
@@ -126,7 +117,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("6")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -135,7 +125,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("5")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -144,7 +133,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("4")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -153,7 +141,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("3")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -162,7 +149,6 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("2")
-                        //.frame(width: 35)
                     Rectangle()
                         .frame(width: 45)
                         .foregroundColor(.clear)
@@ -171,16 +157,15 @@ struct WhatRPEView: View {
                 
                 HStack{
                     Text("1")
-                        //.frame(width: 35)
                     Rectangle()
-                        .frame(width: 45)
+                        .frame(width: 46)
                         .foregroundColor(.clear)
                     Text("Could have done 9 more reps")
                 }
                 
             }
         }
-        .background(Color.abuDefault)
+        .background(Color("BackgroundBG"))
     }
     
 }
