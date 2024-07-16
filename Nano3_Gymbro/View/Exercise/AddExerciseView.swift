@@ -38,7 +38,6 @@ struct AddExerciseView: View{
                 TextField("Enter exercise", text: $exerciseName)
             }
             .padding()
-            .background(Color.white)
             .cornerRadius(10)
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .padding(.horizontal)
@@ -58,7 +57,7 @@ struct AddExerciseView: View{
             .padding(.top)
             Spacer()
         }
-        .background(Color.abuDefault.edgesIgnoringSafeArea(.all))
+        .background(Color.backgroundBG.edgesIgnoringSafeArea(.all))
         
     }
     
