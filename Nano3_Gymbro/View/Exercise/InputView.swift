@@ -22,7 +22,7 @@ struct InputView: View {
                     Text("No exercise selected")
                 }
 
-                NavigationLink(destination: ExerciseListView( navigateToContentView: $navigateToExerciseListView).navigationBarBackButtonHidden(true), isActive: $navigateToExerciseListView) {
+                NavigationLink(destination: ExerciseListView().navigationBarBackButtonHidden(true), isActive: $navigateToExerciseListView) {
                     Text("Choose Exercise").font(.title)
                 }
 

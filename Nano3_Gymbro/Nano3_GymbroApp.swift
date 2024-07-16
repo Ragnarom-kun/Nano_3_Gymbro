@@ -11,7 +11,7 @@ import SwiftUI
 struct Nano3_GymbroApp: App {
     var body: some Scene {
         WindowGroup {
-            PRCardView()
+            ContentView()
         }.modelContainer(for: [ExerciseName.self, ExercisePR.self, ExerciseRM.self])
     }
 }

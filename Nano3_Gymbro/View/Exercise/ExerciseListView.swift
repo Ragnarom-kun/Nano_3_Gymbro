@@ -5,7 +5,6 @@ struct ExerciseListView: View {
     @Environment(\.modelContext) public var context
     @Query public var exercises: [ExerciseName]
     @EnvironmentObject var viewModel: ExerciseViewModel
-    @Binding var navigateToContentView: Bool
     @State private var showSheet = false
     @State private var showDetails = false
     @Environment(\.presentationMode) var presentationMode
@@ -24,7 +23,6 @@ struct ExerciseListView: View {
                             .contentShape(Rectangle())
                             .onTapGesture {
                                 viewModel.setActiveExercise(exercise, context: context)
-                                navigateToContentView = true
                                 viewModel.setShowDetails(false)
                                 presentationMode.wrappedValue.dismiss()
                             }
@@ -47,7 +45,6 @@ struct ExerciseListView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
-                        navigateToContentView = true
                         presentationMode.wrappedValue.dismiss()
                     }) {
                         Image(systemName: "chevron.left")
@@ -66,7 +63,6 @@ struct ExerciseListView: View {
                 }
             }
         }
-        .animation(.easeInOut, value: navigateToContentView)
     }
 }
 
