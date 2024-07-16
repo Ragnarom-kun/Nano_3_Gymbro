@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct RMInputView: View {
-    @EnvironmentObject var viewModel: RMCalculatorViewModel
+    @EnvironmentObject var viewModelRMCalculator: RMCalculatorViewModel
+    @EnvironmentObject var viewModelExercise: ExerciseViewModel
     @State var weight: Int = 20
     @State var reps: Int = 1
     @State var sets: Int = 1
     @State var exercise: String = "Bench Press"
     @State var openedPicker: String = ""
     @State var isWeightPickerExpanded: Bool = false
+    @EnvironmentObject var router: Router
 
     @Binding var unit: String
-
-    var exerciseDummy = ["Bench Press", "Squat", "Deadlift"]
 
     var body: some View {
         Section {
@@ -101,16 +101,20 @@ struct RMInputView: View {
 
             HStack {
                 Text("Exercise")
-                Picker("", selection: $exercise) {
-                    ForEach(exerciseDummy, id: \.self) { exercise in
-                        Text("\(exercise)").tag(exercise)
+                Spacer()
+                Button(action: {
+                    router.navigateTo(.ExerciseListView)
+                }, label: {
+                    HStack{
+                        Text(viewModelExercise.activeExercise?.name ?? "No Exercise Selected")
+                        Image(systemName: "chevron.right")
                     }
-                }
-                .frame(maxWidth: .infinity)
+                    
+                })
             }
 
             Button(action: {
-                viewModel.calculateRM(weight: Double(weight), reps: Double(reps), sets: Double(sets), unit: unit)
+                viewModelRMCalculator.calculateRM(weight: Double(weight), reps: Double(reps), sets: Double(sets), unit: unit)
             }, label: {
                 Text("Calculate")
                     .frame(maxWidth: .infinity)
@@ -120,7 +124,6 @@ struct RMInputView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12.0))
             })
         }
-
         .listSectionSeparator(.hidden, edges: .top)
     }
 }
