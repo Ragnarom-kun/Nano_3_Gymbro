@@ -19,4 +19,6 @@ class ExercisePR: Identifiable{
         self.value = value
         self.date = date
     }
+    
+  
 }
