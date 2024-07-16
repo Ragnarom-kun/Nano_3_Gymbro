@@ -11,7 +11,7 @@ import SwiftUI
 class Router: ObservableObject {
     // Contains the possible destinations in our Router
     enum Route: Hashable {
-        case ExerciseListView
+        case ExerciseListView, WhatRPEView, LineChartRMView
     }
     
     // Used to programatically control our navigation stack
@@ -22,6 +22,10 @@ class Router: ObservableObject {
         switch route {
         case .ExerciseListView:
             ExerciseListView()
+        case .WhatRPEView:
+            WhatRPEView()
+        case .LineChartRMView:
+            LineChartRMView()
         }
     }
     

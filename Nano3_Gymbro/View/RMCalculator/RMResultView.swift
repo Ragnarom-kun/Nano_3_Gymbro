@@ -21,6 +21,7 @@ struct RMResultView: View {
     @Binding var unit: String
     @State private var showAlert = false
     let percentages = [96, 92, 89, 86, 84, 81, 79, 76, 74, 71, 68]
+    @EnvironmentObject var router: Router
     
     var body: some View {
         Section {
@@ -36,6 +37,9 @@ struct RMResultView: View {
                     Spacer()
                     Image(systemName: "info.circle")
                         .foregroundStyle(.blue)
+                        .onTapGesture(perform: {
+                            router.navigateTo(.WhatRPEView)
+                        })
                 }
                 
                 VStack(spacing: 12) {
@@ -57,6 +61,9 @@ struct RMResultView: View {
                         HStack {
                             Image(systemName: "square.and.pencil")
                             Text("Add to Progress")
+                                .onSubmit {
+                                    router.navigateTo(.LineChartRMView)
+                                }
                         }
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
