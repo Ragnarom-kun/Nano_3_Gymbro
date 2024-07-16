@@ -26,14 +26,14 @@ struct InputView: View {
                     Text("Choose Exercise").font(.title)
                 }
 
-//                Button(action: {
-//                    if let selectedExercise = viewModel.activeExercise {
+                Button(action: {
+                    if let selectedExercise = viewModel.activeExercise {
 //                        viewModel.addArray(item: selectedExercise, PR: PR, RM: RM, context: context)
-//                    }
-//                }) {
-//                    Text("Add RM and PR to Exercise")
-//                }
-//                .padding()
+                    }
+                }) {
+                    Text("Add RM and PR to Exercise")
+                }
+                .padding()
                 
                 ProgressiveOverloadPlanView()
             }

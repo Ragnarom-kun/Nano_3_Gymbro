@@ -9,33 +9,26 @@ import SwiftUI
 import SwiftData
 
 struct PRCardView: View {
+    
+    @Query public var exercises: [ExerciseName]
+    @EnvironmentObject var viewModel: ExerciseViewModel
     @State private var cards: [Card] = [
-        Card(id: UUID(), title: "BenchPress", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Squad", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Angkat Galon", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
-        Card(id: UUID(), title: "Deadlift", detail: "Detail for Card 1", date: .now, weight: 100),
     ]
 
     var body: some View {
+       
        
             NavigationView {
                 VStack {
                     ScrollView{
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                        ForEach(cards) { card in
-                            NavigationLink(destination: DetailView(card: card, cards: cards)) {
-                                                          CardView(card: card)
+                        
+                        ForEach(exercises) { exercise in
+                            NavigationLink(destination: DetailView(exerciseName: exercise)) {
+                                CardView(exerciseName: exercise)
                             }
                         }
+
                     }
                     .padding()
                      Spacer()
@@ -47,30 +40,31 @@ struct PRCardView: View {
     }
 }
 
-#Preview {
-    PRCardView()
-}
-
 
 
 struct CardView: View {
-    let card: Card
+    let exerciseName: ExerciseName
+    //let exerciseValue: ExerciseName
+    
+
+    @EnvironmentObject var viewModel: ExerciseViewModel
 
     var body: some View {
+
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "flame")
-                Text(card.title)
+                Text(exerciseName.name)
                 Spacer()
             }.foregroundColor(.orange)
             .lineLimit(1)
             .truncationMode(.tail)
             HStack(alignment:.firstTextBaseline) {
-                Text("\(card.weight)").font(.system(size: 34)).bold()
+                Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))").font(.system(size: 34)).bold()
                 Text("Kg")
             }
           
-            Text("\(card.date, formatter: dateFormatter)").fontWeight(.thin)
+            Text("\(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
         }
         .font(.headline)
         .padding()
