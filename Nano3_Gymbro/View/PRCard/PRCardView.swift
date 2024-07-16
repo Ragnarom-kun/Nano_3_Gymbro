@@ -5,11 +5,10 @@
 //  Created by Christian Gunawan on 11/07/24.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct PRCardView: View {
-    
     @Query public var exercises: [ExerciseName]
     @EnvironmentObject var viewModel: ExerciseViewModel
     @State private var cards: [Card] = [
@@ -24,16 +23,14 @@ struct PRCardView: View {
                 VStack {
                     ScrollView{
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                        
                         ForEach(exercises) { exercise in
                             NavigationLink(destination: DetailView(exerciseName: exercise)) {
                                 CardView(exerciseName: exercise)
                             }
                         }
-
                     }
                     .padding()
-                     Spacer()
+                    Spacer()
                 }
                 .navigationTitle("Personal Record")
                 .background(Color("BackgroundBG").edgesIgnoringSafeArea(.all))
@@ -42,15 +39,11 @@ struct PRCardView: View {
     }
 }
 
-
-
 struct CardView: View {
     let exerciseName: ExerciseName
     @EnvironmentObject var viewModel: ExerciseViewModel
 
     var body: some View {
-     
-
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "flame")
@@ -82,7 +75,6 @@ struct CardView: View {
         .cornerRadius(10)
         .frame(width: 169, height: 139)
         .padding(5)
-        
     }
 }
 
@@ -91,6 +83,3 @@ private let dateFormatter: DateFormatter = {
     formatter.dateStyle = .short
     return formatter
 }()
-
-
-
