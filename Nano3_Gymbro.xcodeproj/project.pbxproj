@@ -136,7 +136,6 @@
 				E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */,
 				E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */,
 				E42819512C3BA5EF008883D4 /* Products */,
-				E4A8AFD92C46557800EAC5B9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -621,7 +620,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = FSN9NYGU93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -651,7 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = FSN9NYGU93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

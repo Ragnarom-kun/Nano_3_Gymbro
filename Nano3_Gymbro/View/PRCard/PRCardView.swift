@@ -16,8 +16,10 @@ struct PRCardView: View {
     ]
 
     var body: some View {
-       
-       
+        
+        if exercises.isEmpty{
+            Text("No Data Avaible").foregroundColor(Color("FontColor"))
+        }
             NavigationView {
                 VStack {
                     ScrollView{
@@ -44,12 +46,10 @@ struct PRCardView: View {
 
 struct CardView: View {
     let exerciseName: ExerciseName
-    //let exerciseValue: ExerciseName
-    
-
     @EnvironmentObject var viewModel: ExerciseViewModel
 
     var body: some View {
+     
 
         VStack(alignment: .leading) {
             HStack {
@@ -59,12 +59,21 @@ struct CardView: View {
             }.foregroundColor(.orange)
             .lineLimit(1)
             .truncationMode(.tail)
-            HStack(alignment:.firstTextBaseline) {
-                Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))").font(.system(size: 34)).bold()
-                Text("Kg")
-            }
-          
-            Text("\(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
+            
+            if let lastPR = exerciseName.sortedListPR.last {
+                  HStack(alignment: .firstTextBaseline) {
+                      Text("\(String(format: "%.1f", lastPR.value))").font(.system(size: 34)).bold()
+                      Text("Kg")
+                  }
+                  Text("\(lastPR.date, formatter: dateFormatter)").fontWeight(.thin)
+              } else {
+                  HStack(alignment: .firstTextBaseline) {
+                      Text("0").font(.system(size: 34)).bold()
+                      Text("Kg")
+                  }
+                  Text("-").fontWeight(.thin)
+              }
+    
         }
         .font(.headline)
         .padding()

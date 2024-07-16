@@ -32,19 +32,38 @@ struct DetailView: View {
                         
                         HStack(alignment: .firstTextBaseline) {
                             Spacer()
-                            Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))").font(.system(size: 34)).bold()
-                            Text("Kg").font(.system(size: 15))
+                            if let lastPR = exerciseName.sortedListPR.last {
+                                Text("\(String(format: "%.1f", lastPR.value))")
+                                    .font(.system(size: 34))
+                                    .bold()
+                                Text("Kg")
+                                    .font(.system(size: 15))
+                            } else {
+                                // Handle the case where sortedListPR is empty
+                                Text("0")
+                                    .font(.system(size: 34))
+                                    .bold()
+                                Text("Kg")
+                                    .font(.system(size: 15))
+                            }
                             Spacer()
                         }
                         .listRowSeparator(.hidden)
                         
                         HStack {
                             Spacer()
-                            Text("Last Update: \(exerciseName.sortedListPR.last!.date, formatter: dateFormatter)").fontWeight(.thin)
+                            if let lastPR = exerciseName.sortedListPR.last {
+                                Text("Last Update: \(lastPR.date, formatter: dateFormatter)")
+                                    .fontWeight(.thin)
+                            } else {
+                                // Handle the case where sortedListPR is empty
+                                Text("Last Update: N/A")
+                                    .fontWeight(.thin)
+                            }
                             Spacer()
                         }
                         .listRowSeparator(.hidden)
-                        
+
                         Button(action: {
                             isModalPresented.toggle()
                         }) {
@@ -88,21 +107,35 @@ struct DetailView: View {
                         
                         HStack {
                             Spacer()
-                            VStack {
-                                Text("Start").foregroundColor(.blue)
-                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.first!.value))Kg")
-                            }
-                            Divider()
-                                .background(Color.gray)
-                                .frame(height: 30)
-                            VStack {
-                                Text("Last").foregroundColor(.blue)
-                                Text("\(String(format: "%.1f",exerciseName.sortedListPR.last!.value))Kg")
-                                
-                               
+                            if let firstPR = exerciseName.sortedListPR.first, let lastPR = exerciseName.sortedListPR.last {
+                                VStack {
+                                    Text("Start").foregroundColor(.blue)
+                                    Text("\(String(format: "%.1f", firstPR.value))Kg")
+                                }
+                                Divider()
+                                    .background(Color.gray)
+                                    .frame(height: 30)
+                                VStack {
+                                    Text("Last").foregroundColor(.blue)
+                                    Text("\(String(format: "%.1f", lastPR.value))Kg")
+                                }
+                            } else {
+                                // Handle the case where sortedListPR is empty or nil
+                                VStack {
+                                    Text("Start").foregroundColor(.blue)
+                                    Text("N/A Kg")
+                                }
+                                Divider()
+                                    .background(Color.gray)
+                                    .frame(height: 30)
+                                VStack {
+                                    Text("Last").foregroundColor(.blue)
+                                    Text("N/A Kg")
+                                }
                             }
                             Spacer()
                         }
+
                         
                         Text("chart").font(.system(size: 800))
                             .listRowSeparator(.hidden)

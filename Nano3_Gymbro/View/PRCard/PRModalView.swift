@@ -46,12 +46,19 @@ struct ModalView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        print("exerciseName: \(exerciseName.name)")
-                        if(weight > exerciseName.sortedListPR.last!.value){
+                        if let lastPR = exerciseName.sortedListPR.last {
+                            if weight > lastPR.value {
+                                viewModel.addArrayPR(item: exerciseName, PR: weight, context: context)
+                                presentationMode.wrappedValue.dismiss()
+                            }
+                        } else {
+                            // Handle the case where sortedListPR is empty or nil
+                            // For example, you might want to add the weight as the first PR
                             viewModel.addArrayPR(item: exerciseName, PR: weight, context: context)
+                            
+                         
                         }
-                       
-                 
+
                     }){
                         Text("Add New Exercise").foregroundColor(Color(.white)).padding(.horizontal,90)
                             .padding(.vertical, 14)
