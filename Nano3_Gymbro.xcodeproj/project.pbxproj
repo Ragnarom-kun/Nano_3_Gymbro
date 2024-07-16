@@ -20,12 +20,10 @@
 		E428196F2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428196E2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift */; };
 		E42819712C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819702C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift */; };
 		E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819872C3F8A9B008883D4 /* RouterViewModel.swift */; };
-		E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428198E2C3F9AD0008883D4 /* LineChartView.swift */; };
 		E42819942C3FA47C008883D4 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819932C3FA47C008883D4 /* RouterView.swift */; };
 		E4A8AFB62C44E84700EAC5B9 /* ExerciseName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */; };
 		E4A8AFB72C44E84700EAC5B9 /* ExerciseRM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */; };
 		E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */; };
-		E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBD2C44E89500EAC5B9 /* \.swift */; };
 		E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */; };
 		E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */; };
 		E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */; };
@@ -34,6 +32,7 @@
 		E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */; };
 		E4A8AFCF2C44E96500EAC5B9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */; };
 		E4A8AFD82C46461F00EAC5B9 /* InputDataExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFD72C46461F00EAC5B9 /* InputDataExercise.swift */; };
+		E4A8AFDB2C46579400EAC5B9 /* LineChartRMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFDA2C46579400EAC5B9 /* LineChartRMView.swift */; };
 		F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B28382C3FC8EF00DCF909 /* PRCardView.swift */; };
 		F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */; };
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
@@ -75,14 +74,10 @@
 		E428196E2C3BA5F0008883D4 /* Nano3_GymbroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroUITests.swift; sourceTree = "<group>"; };
 		E42819702C3BA5F0008883D4 /* Nano3_GymbroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E42819872C3F8A9B008883D4 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
-		E428198E2C3F9AD0008883D4 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		E42819932C3FA47C008883D4 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
 		E4A8AFB32C44E84700EAC5B9 /* ExerciseName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseName.swift; sourceTree = "<group>"; };
 		E4A8AFB42C44E84700EAC5B9 /* ExerciseRM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRM.swift; sourceTree = "<group>"; };
 		E4A8AFB52C44E84700EAC5B9 /* ExercisePR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisePR.swift; sourceTree = "<group>"; };
-		E4A8AFB92C44E86E00EAC5B9 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
-		E4A8AFBA2C44E86E00EAC5B9 /* LineChartView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineChartView.storyboard; sourceTree = "<group>"; };
-		E4A8AFBD2C44E89500EAC5B9 /* \.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\\.swift"; sourceTree = "<group>"; };
 		E4A8AFBF2C44E8AA00EAC5B9 /* PRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRView.swift; sourceTree = "<group>"; };
 		E4A8AFC12C44E8CD00EAC5B9 /* ExerciseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewModel.swift; sourceTree = "<group>"; };
 		E4A8AFC42C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressiveOverloadPlanView.swift; sourceTree = "<group>"; };
@@ -91,6 +86,7 @@
 		E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
 		E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		E4A8AFD72C46461F00EAC5B9 /* InputDataExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputDataExercise.swift; path = Nano3_Gymbro/InputDataExercise.swift; sourceTree = SOURCE_ROOT; };
+		E4A8AFDA2C46579400EAC5B9 /* LineChartRMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartRMView.swift; sourceTree = "<group>"; };
 		F82B28382C3FC8EF00DCF909 /* PRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCardView.swift; sourceTree = "<group>"; };
 		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
@@ -140,6 +136,7 @@
 				E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */,
 				E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */,
 				E42819512C3BA5EF008883D4 /* Products */,
+				E4A8AFD92C46557800EAC5B9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,7 +246,7 @@
 		E42819892C3F9A6F008883D4 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				E428198E2C3F9AD0008883D4 /* LineChartView.swift */,
+				E4A8AFDA2C46579400EAC5B9 /* LineChartRMView.swift */,
 			);
 			path = LineChart;
 			sourceTree = "<group>";
@@ -411,8 +408,6 @@
 			files = (
 				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
 				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
-				E4A8AFBC2C44E86E00EAC5B9 /* LineChartView.storyboard in Resources */,
-				E4A8AFBB2C44E86E00EAC5B9 /* LineChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +442,6 @@
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */,
 				E4A8AFD82C46461F00EAC5B9 /* InputDataExercise.swift in Sources */,
-				E4A8AFBE2C44E89500EAC5B9 /* \.swift in Sources */,
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
 				E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */,
 				E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */,
@@ -458,9 +452,9 @@
 				E4A8AFC32C44E8CD00EAC5B9 /* ExerciseViewModel.swift in Sources */,
 				F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */,
 				F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */,
+				E4A8AFDB2C46579400EAC5B9 /* LineChartRMView.swift in Sources */,
 				E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */,
 				F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */,
-				E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */,
 				201418042C3F8A9600321022 /* RMInputView.swift in Sources */,
 				201418082C40439100321022 /* RMResultView.swift in Sources */,
 				201418022C3F89BD00321022 /* RMCalculatorView.swift in Sources */,
