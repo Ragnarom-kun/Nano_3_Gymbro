@@ -9,10 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PRCardView()
-//        RouterView {
-//            LineChartView()
-//        }
+        RouterView {
+            PRCardView()
+        }
     }
 }
 
