@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AddExerciseView: View{
     @State private var exerciseName: String = ""
+    @Query public var exercises: [ExerciseName]
     @Environment(\.presentationMode) var presentationMode
     @StateObject private var viewModel = ExerciseViewModel()
     @Environment(\.modelContext) public var context
@@ -44,6 +46,7 @@ struct AddExerciseView: View{
             
             Button(action: {
                 viewModel.addItem(name: exerciseName, id: UUID().uuidString, RMBest: 0, context: context)
+//                viewModel.addArrayPR( item:exercises.last , PR: 0, context: context)
                 presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Add New Exercise")

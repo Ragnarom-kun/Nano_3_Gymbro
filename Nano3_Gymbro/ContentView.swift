@@ -10,7 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         RouterView {
-            RMCalculatorView()
+            TabView {
+                RMCalculatorView()
+                    .tabItem {
+                        Label("Calculator", systemImage: "percent")
+                    }
+                LineChartRMView()
+                    .tabItem {
+                        Label("Progress", systemImage: "chart.xyaxis.line")
+                    }
+                PRCardView()
+                    .tabItem {
+                        Label("Personal Record", systemImage: "dumbbell")
+                    }
+            }
         }
     }
 }

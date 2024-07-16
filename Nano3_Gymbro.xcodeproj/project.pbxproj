@@ -60,7 +60,7 @@
 /* Begin PBXFileReference section */
 		201418012C3F89BD00321022 /* RMCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCalculatorView.swift; sourceTree = "<group>"; };
 		201418032C3F8A9600321022 /* RMInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInputView.swift; sourceTree = "<group>"; };
-		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/View/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
+		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/ViewModel/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
 		201418072C40439100321022 /* RMResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultView.swift; sourceTree = "<group>"; };
 		20584DB32C44DBD800B482F4 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = Nano3_Gymbro/View/RMCalculator/Formatter.swift; sourceTree = SOURCE_ROOT; };
 		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +125,14 @@
 				201418012C3F89BD00321022 /* RMCalculatorView.swift */,
 				201418032C3F8A9600321022 /* RMInputView.swift */,
 				201418072C40439100321022 /* RMResultView.swift */,
+			);
+			path = RMCalculator;
+			sourceTree = "<group>";
+		};
+		20BDE6A32C46873600FB2CF1 /* RMCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				201418052C403C1100321022 /* RMCalculatorViewModel.swift */,
 			);
 			path = RMCalculator;
 			sourceTree = "<group>";
@@ -218,9 +226,9 @@
 		E428197F2C3F84E0008883D4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				20BDE6A32C46873600FB2CF1 /* RMCalculator */,
 				E4A8AFC22C44E8CD00EAC5B9 /* Exercise */,
 				E42819862C3F8A8D008883D4 /* Router */,
-				201418052C403C1100321022 /* RMCalculatorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -620,7 +628,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = FSN9NYGU93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -650,7 +658,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nano3_Gymbro/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5LAH6MA86;
+				DEVELOPMENT_TEAM = FSN9NYGU93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
