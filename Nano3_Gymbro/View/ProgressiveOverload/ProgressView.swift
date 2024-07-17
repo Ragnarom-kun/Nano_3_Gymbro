@@ -43,7 +43,7 @@ struct ProgressView: View {
             .listRowBackground(Color.clear)
             .listRowInsets(EdgeInsets())
             
-            LineChartRMView()
+            LineChartRMView(unit: $selectedUnits)
             ProgressiveOverloadPlanView()
         }
         .listStyle(InsetGroupedListStyle())

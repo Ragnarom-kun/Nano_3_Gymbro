@@ -16,21 +16,21 @@ struct LineChartRMView: View {
     @State private var selection = 0
     let segmentsRM = ["D", "W", "M", "6M", "Y"]
     
+    @Binding var unit: String
+    
     var body: some View {
         if let exerciseName = viewModelExercise.activeExercise {
             VStack {
                 HStack {
-                    Button(action: {
+                    HStack {
+                        Text(viewModelExercise.activeExercise?.name ?? "No Exercise Selected")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(.blue)
+                        Image(systemName: "chevron.right")
+                    }.onTapGesture {
                         router.navigateTo(.ExerciseListView)
-                    }, label: {
-                        HStack{
-                            Text(viewModelExercise.activeExercise?.name ?? "No Exercise Selected")
-                                .font(.title2)
-                                .fontWeight(.bold)
-                                .foregroundColor(.blue)
-                            Image(systemName: "chevron.right")
-                        }
-                    })
+                    }
                     Spacer()
                 }
                 .padding(.horizontal)
@@ -49,40 +49,77 @@ struct LineChartRMView: View {
                     if let startRM = exerciseName.sortedListRM.first, let lastRM = exerciseName.sortedListRM.last {
                         VStack {
                             Text("Start").foregroundColor(.blue)
-                            Text("\(String(format: "%.1f", startRM.value)) kg")
+                            HStack{
+                                Text("\(changeUnit(startRM.value, unit))")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
+                            
                         }
+                        .frame(maxWidth: .infinity)
                         Divider()
                             .background(Color.gray)
                             .frame(height: 30)
                         VStack {
                             Text("Last").foregroundColor(.blue)
-                            Text("\(String(format: "%.1f", lastRM.value)) kg")
+                            HStack{
+                                Text("\(changeUnit(lastRM.value, unit))")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
+                            
                         }
+                        .frame(maxWidth: .infinity)
                         Divider()
                             .background(Color.gray)
                             .frame(height: 30)
                         VStack {
                             Text("Best").foregroundColor(.blue)
-                            Text("\(String(format: "%.1f", exerciseName.RMBest)) kg")
+                            HStack {
+                                Text("\(changeUnit(exerciseName.RMBest, unit))")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
+                            
                         }
+                        .frame(maxWidth: .infinity)
+                        
                     } else {
                         VStack {
                             Text("Start").foregroundColor(.blue)
-                            Text("N/A kg")
+                            HStack {
+                                Text("N/A")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
                         }
                         Divider()
                             .background(Color.gray)
                             .frame(height: 30)
                         VStack {
                             Text("Last").foregroundColor(.blue)
-                            Text("N/A kg")
+                            HStack {
+                                Text("N/A")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
                         }
                         Divider()
                             .background(Color.gray)
                             .frame(height: 30)
                         VStack {
                             Text("Best").foregroundColor(.blue)
-                            Text("N/A kg")
+                            HStack {
+                                Text("N/A")
+                                Text("\(unit)")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
                         }
                     }
                     Spacer()
@@ -127,5 +164,5 @@ struct LineChartRMView: View {
 }
 
 #Preview {
-    LineChartRMView()
+    LineChartRMView(unit: .constant("Kg"))
 }
