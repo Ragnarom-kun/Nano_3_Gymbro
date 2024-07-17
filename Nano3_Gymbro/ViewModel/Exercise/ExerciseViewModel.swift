@@ -117,4 +117,23 @@ class ExerciseViewModel: ObservableObject{
         }
     }
     
+    func getExerciseByName(name: String, context: ModelContext) -> ExerciseName? {
+            let fetchDescriptor = FetchDescriptor<ExerciseName>(
+                predicate: #Predicate { $0.name == name }
+            )
+            
+            do {
+                let results = try context.fetch(fetchDescriptor)
+                if let exercise = results.first {
+                    return exercise
+                } else {
+                    print("Exercise not found")
+                }
+            } catch {
+                print("Fetch error: \(error.localizedDescription)")
+            }
+        
+            return nil
+        }
+    
 }

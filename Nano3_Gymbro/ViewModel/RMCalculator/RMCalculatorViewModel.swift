@@ -13,8 +13,6 @@ class RMCalculatorViewModel: ObservableObject {
     @Published var sets: Double = 0
     @Published var reps: Double = 0
 
-    func addRM(rm: Double, context: ModelContext) {}
-
     func calculateRM(weight: Double, reps: Double, sets: Double, unit: String) {
         let e = M_E
         let exponent = -0.055 * reps

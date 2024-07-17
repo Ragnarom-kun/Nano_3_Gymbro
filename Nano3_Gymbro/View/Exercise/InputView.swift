@@ -22,9 +22,9 @@ struct InputView: View {
                     Text("No exercise selected")
                 }
 
-                NavigationLink(destination: ExerciseListView().navigationBarBackButtonHidden(true), isActive: $navigateToExerciseListView) {
-                    Text("Choose Exercise").font(.title)
-                }
+//                NavigationLink(destination: ExerciseListView().navigationBarBackButtonHidden(true), isActive: $navigateToExerciseListView) {
+//                    Text("Choose Exercise").font(.title)
+//                }
 
                 Button(action: {
                     if let selectedExercise = viewModel.activeExercise {

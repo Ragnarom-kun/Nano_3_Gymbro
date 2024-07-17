@@ -17,6 +17,7 @@ struct RMInputView: View {
     @State var openedPicker: String = ""
     @State var isWeightPickerExpanded: Bool = false
     @EnvironmentObject var router: Router
+    @Environment(\.modelContext) public var context
 
     @Binding var unit: String
 
@@ -125,6 +126,12 @@ struct RMInputView: View {
             })
         }
         .listSectionSeparator(.hidden, edges: .top)
+        .onAppear().task {
+            let activeTemp = viewModelExercise.activeExercise
+            if (activeTemp == nil) {
+                viewModelExercise.activeExercise = viewModelExercise.getExerciseByName(name: "Bench Press", context: context)
+            }
+        }
     }
 }
 

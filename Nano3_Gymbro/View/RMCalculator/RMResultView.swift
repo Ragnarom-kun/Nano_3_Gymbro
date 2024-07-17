@@ -36,6 +36,9 @@ struct RMResultView: View {
                     Spacer()
                     Image(systemName: "info.circle")
                         .foregroundStyle(.blue)
+                        .onTapGesture(perform: {
+                            // routing to "How We Calculate"
+                        })
                 }
 
                 VStack(spacing: 12) {
