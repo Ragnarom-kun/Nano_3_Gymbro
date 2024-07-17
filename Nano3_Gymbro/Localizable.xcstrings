@@ -17,12 +17,24 @@
             "state" : "translated",
             "value" : "% من 1RM"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "% 1RM"
+          }
         }
       }
     },
     "%@" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@"
@@ -43,12 +55,24 @@
             "state" : "new",
             "value" : "%1$@ %2$@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
         }
       }
     },
     "%lld" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -63,6 +87,12 @@
             "state" : "translated",
             "value" : "%lld kg"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kg"
+          }
         }
       }
     },
@@ -73,12 +103,24 @@
             "state" : "translated",
             "value" : "%lld Kg"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kg"
+          }
         }
       }
     },
     "%lld lb" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lb"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld lb"
@@ -105,12 +147,24 @@
             "state" : "translated",
             "value" : "1RM"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1RM"
+          }
         }
       }
     },
     "1RM (kg) =" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1RM (kg) ="
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1RM (kg) ="
@@ -125,6 +179,12 @@
             "state" : "translated",
             "value" : "حساب 1RM"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalkulator 1RM"
+          }
         }
       }
     },
@@ -134,6 +194,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تقدم الحد الأقصى للتكرار الواحد (1RM)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progres 1RM"
           }
         }
       }
@@ -184,6 +250,12 @@
             "state" : "translated",
             "value" : "إضافة تمرين جديد"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah jenis latihan baru"
+          }
         }
       }
     },
@@ -194,6 +266,12 @@
             "state" : "translated",
             "value" : "إضافة سجل جديد"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah rekor baru"
+          }
         }
       }
     },
@@ -203,6 +281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إضافة إلى التقدم"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catat Perkembangan"
           }
         }
       }
@@ -220,6 +304,12 @@
             "state" : "new",
             "value" : "Based on your RPE of %1$@, you should add %2$@%% to your current weight of %3$@ kg. Increase it to %4$@ kg to keep progressing and building strength. Keep up the great work!"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berdasarkan RPE Anda sebesar %1$@, Anda sebaiknya menambah %2$@% dari berat saat ini yaitu %3$@ kg. Tingkatkan menjadi %4$@ kg untuk terus berkembang dan membangun kekuatan. Tetap semangat!"
+          }
         }
       }
     },
@@ -229,6 +319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الأفضل"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terbaik"
           }
         }
       }
@@ -240,6 +336,12 @@
             "state" : "translated",
             "value" : "وجد Brzychi (4) و Ware et al. (17) أن أداء أقل من 10 تكرارات حتى الإرهاق يوفر تقديرًا أكثر دقة لقيمة 1-RM الخاصة بك."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brzychi dan Ware dkk. menemukan bahwa melakukan kurang dari 10 repetisi hingga lelah memberikan estimasi yang lebih akurat dari 1-RM Anda. "
+          }
         }
       }
     },
@@ -249,6 +351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "احسب"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hitung"
           }
         }
       }
@@ -260,6 +368,12 @@
             "state" : "translated",
             "value" : "آلة حاسبة"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kalkulator"
+          }
         }
       }
     },
@@ -269,6 +383,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كنت أستطيع القيام بخمس تكرارات إضافية"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could have done 5 more reps"
           }
         }
       }
@@ -280,6 +400,12 @@
             "state" : "translated",
             "value" : "كنت أستطيع القيام بست تكرارات إضافية"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could have done 6 more reps"
+          }
         }
       }
     },
@@ -289,6 +415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كنت أستطيع القيام بسبع تكرارات إضافية"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could have done 7 more reps"
           }
         }
       }
@@ -300,6 +432,12 @@
             "state" : "translated",
             "value" : "كنت أستطيع القيام بثماني تكرارات إضافية"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could have done 8 more reps"
+          }
         }
       }
     },
@@ -309,6 +447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "كنت أستطيع القيام بتسع تكرارات إضافية"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could have done 9 more reps"
           }
         }
       }
@@ -320,6 +464,12 @@
             "state" : "translated",
             "value" : "الوزن الحالي: %@ كغ"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat Saat Ini: %@ kg"
+          }
         }
       }
     },
@@ -329,6 +479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تاريخ"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanggal"
           }
         }
       }
@@ -340,6 +496,12 @@
             "state" : "translated",
             "value" : "بالتأكيد كنت قادرًا على القيام بتكرار واحد إضافي"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasti bisa melakukan 1 repetisi lagi"
+          }
         }
       }
     },
@@ -349,6 +511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "بالتأكيد كنت قادرًا على القيام بتكرارين إضافيين"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasti bisa melakukan 2 repetisi lagi"
           }
         }
       }
@@ -360,6 +528,12 @@
             "state" : "translated",
             "value" : "التأكيد كنت قادرًا على القيام بثلاث تكرارات إضافية"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasti bisa melakukan 3 repetisi lagi"
+          }
         }
       }
     },
@@ -369,6 +543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "بالتأكيد كنت قادرًا على القيام بأربع تكرارات إضافية"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pasti bisa melakukan 4 repetisi lagi"
           }
         }
       }
@@ -380,6 +560,12 @@
             "state" : "translated",
             "value" : "حذف"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus"
+          }
         }
       }
     },
@@ -389,6 +575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الوصف"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deskripsi"
           }
         }
       }
@@ -400,6 +592,12 @@
             "state" : "translated",
             "value" : "تم"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
         }
       }
     },
@@ -409,6 +607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "أدخل التمرين"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan jenis latihan"
           }
         }
       }
@@ -420,6 +624,12 @@
             "state" : "translated",
             "value" : "مكن أن يقلل تجاوز 10 تكرارات من دقة قيمة الحد الأقصى للتكرار."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Melebihi 10 repetisi dapat mengurangi keakuratan nilai RM Anda. "
+          }
         }
       }
     },
@@ -429,6 +639,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تمرين"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Latihan"
           }
         }
       }
@@ -440,6 +656,12 @@
             "state" : "translated",
             "value" : "نوع التمرين"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Latihan"
+          }
         }
       }
     },
@@ -449,6 +671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "إنشاء الخطة"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Plan"
           }
         }
       }
@@ -463,6 +691,12 @@
             "state" : "translated",
             "value" : "كيف نحسب"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagaimana Kami Mengkalkulasi"
+          }
         }
       }
     },
@@ -472,6 +706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "زيادة إلى %@ كغ"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tingkatkan menjadi %@ kg"
           }
         }
       }
@@ -483,12 +723,24 @@
             "state" : "translated",
             "value" : "إنه يساعد في التنظيم الآلي، تتبع التدريب الدقيق، والتخطيط للوزن التدريجي"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ini membantu dalam pengaturan otomatis, pelacakan latihan yang presisi, dan perencanaan untuk peningkatan berat secara bertahap"
+          }
         }
       }
     },
     "Kg" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kg"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kg"
@@ -503,6 +755,12 @@
             "state" : "translated",
             "value" : "الأخيرة"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terakhir"
+          }
         }
       }
     },
@@ -512,6 +770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "آخر تحديث: %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update Terakhir: %@"
           }
         }
       }
@@ -523,12 +787,24 @@
             "state" : "translated",
             "value" : "آخر تحديث: غير متوفر"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update Terakhir: N/A"
+          }
         }
       }
     },
     "lb" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lb"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "lb"
@@ -543,6 +819,12 @@
             "state" : "translated",
             "value" : "بذل أقصى جهد ممكن"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usaha Maksimal"
+          }
         }
       }
     },
@@ -552,6 +834,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ربما كان بإمكاني القيام بتكرار واحد إضافي"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin bisa melakukan 1 repetisi lagi"
           }
         }
       }
@@ -563,6 +851,12 @@
             "state" : "translated",
             "value" : "ربما كنت أستطيع القيام بتكرارين إضافيين"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin bisa melakukan 2 repetisi lagi"
+          }
         }
       }
     },
@@ -572,6 +866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ربما كنت أستطيع القيام بثلاث تكرارات إضافية"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin bisa melakukan 3 repetisi lagi"
           }
         }
       }
@@ -583,6 +883,12 @@
             "state" : "translated",
             "value" : "ربما كنت أستطيع القيام بأربع تكرارات إضافية"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mungkin bisa melakukan 4 repetisi lagi"
+          }
         }
       }
     },
@@ -592,6 +898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "معادلة Mayhew et al."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formula Mayhew et al."
           }
         }
       }
@@ -603,6 +915,12 @@
             "state" : "translated",
             "value" : "غ/م"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A"
+          }
         }
       }
     },
@@ -612,6 +930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "غ/م %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "N/A %@"
           }
         }
       }
@@ -623,6 +947,12 @@
             "state" : "translated",
             "value" : "  الاسم"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama"
+          }
         }
       }
     },
@@ -632,6 +962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تمرين جديد"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Latihan Baru"
           }
         }
       }
@@ -643,6 +979,12 @@
             "state" : "translated",
             "value" : "رقم قياسي جديد"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekor Baru"
+          }
         }
       }
     },
@@ -652,6 +994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لم يتم اختيار تمرين نشط"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada jenis latihan yang dipilih"
           }
         }
       }
@@ -663,6 +1011,12 @@
             "state" : "translated",
             "value" : "لا توجد بيانات"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada data yang tersedia"
+          }
         }
       }
     },
@@ -672,6 +1026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "حسناً"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         }
       }
@@ -683,6 +1043,12 @@
             "state" : "translated",
             "value" : "سجل شخصي"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rekor Personal"
+          }
         }
       }
     },
@@ -692,6 +1058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "التقدم"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkembangan"
           }
         }
       }
@@ -703,6 +1075,12 @@
             "state" : "translated",
             "value" : "خطة التحميل الزائد التدريجي"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rencana Beban Bertahap"
+          }
         }
       }
     },
@@ -712,6 +1090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : " وزن التكرار (repetition weight)، حمولة أقل من 1 RM تُستخدم لإجراء التكرارات"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repetition weight, beban kurang dari 1RM yang digunakan untuk melakukan pengulangan"
           }
         }
       }
@@ -733,6 +1117,12 @@
             "state" : "translated",
             "value" : "تكرار"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reps"
+          }
         }
       }
     },
@@ -742,6 +1132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "وزن التكرار"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat Reps"
           }
         }
       }
@@ -753,6 +1149,12 @@
             "state" : "translated",
             "value" : "النتائج"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hasil"
+          }
         }
       }
     },
@@ -763,12 +1165,24 @@
             "state" : "translated",
             "value" : "تمت إضافة RM إلى التقدم"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RM telah ditambahkan ke perkembangan"
+          }
         }
       }
     },
     "RPE" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RPE"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RPE"
@@ -783,6 +1197,12 @@
             "state" : "translated",
             "value" : "يقيس RPE (تصنيف الجهد المدرك) كثافة التدريب، خاصةً في رفع الأثقال، ويشير إلى عدد التكرارات التي لا يزال بإمكانك القيام بها في آخر مجموعة.\n\nوهو يساعد في التنظيم التلقائي وتتبع التدريب بدقة والتخطيط للوزن التدريجي"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RPE (Rating of Perceived Exertion) mengukur intensitas latihan, terutama dalam angkat beban, menunjukkan berapa banyak repetisi yang masih dapat Anda lakukan dalam set terakhir Anda."
+          }
         }
       }
     },
@@ -793,12 +1213,24 @@
             "state" : "translated",
             "value" : "قياس RPE"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengukuran RPE"
+          }
         }
       }
     },
     "RPE: %@" : {
       "localizations" : {
         "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RPE: %@"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RPE: %@"
@@ -813,6 +1245,12 @@
             "state" : "translated",
             "value" : "RTF"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RTF"
+          }
         }
       }
     },
@@ -822,6 +1260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "شرائح"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segmen"
           }
         }
       }
@@ -833,6 +1277,12 @@
             "state" : "translated",
             "value" : "مجموعة"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sets"
+          }
         }
       }
     },
@@ -842,6 +1292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ابدأ"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Awal"
           }
         }
       }
@@ -853,6 +1309,12 @@
             "state" : "translated",
             "value" : "تم بنجاح"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sukses"
+          }
         }
       }
     },
@@ -862,6 +1324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "القيمة"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nilai"
           }
         }
       }
@@ -873,6 +1341,12 @@
             "state" : "translated",
             "value" : "القيمة(Kg)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nilai (Kg)"
+          }
         }
       }
     },
@@ -882,6 +1356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "القيمة(lbs)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nilai (lbs)"
           }
         }
       }
@@ -893,6 +1373,12 @@
             "state" : "translated",
             "value" : "حجم"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume"
+          }
         }
       }
     },
@@ -902,6 +1388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "الوزن"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat"
           }
         }
       }
@@ -913,6 +1405,12 @@
             "state" : "translated",
             "value" : "الوزن"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berat Diangkat"
+          }
         }
       }
     },
@@ -922,6 +1420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ما هو RPE"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa itu RPE"
           }
         }
       }
@@ -933,6 +1437,12 @@
             "state" : "translated",
             "value" : "ما هو RPE؟"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa itu RPE?"
+          }
         }
       }
     },
@@ -942,6 +1452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "لماذا الحد الأقصى لإدخال ١٠ تكرارات؟"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mengapa maksimal 10 reps input?"
           }
         }
       }
@@ -953,6 +1469,12 @@
             "state" : "translated",
             "value" : "نتيجة 1RM الخاصة بك هي .."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1RM anda adalah"
+          }
         }
       }
     },
@@ -963,6 +1485,12 @@
             "state" : "translated",
             "value" : "خطتك"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rencanamu"
+          }
         }
       }
     },
@@ -972,6 +1500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تقدمك"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkembanganmu"
           }
         }
       }
