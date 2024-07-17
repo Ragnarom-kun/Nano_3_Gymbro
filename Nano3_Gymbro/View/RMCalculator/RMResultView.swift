@@ -21,6 +21,7 @@ struct RMResultView: View {
     @Binding var unit: String
     @State private var showAlert = false
     let percentages = [96, 92, 89, 86, 84, 81, 79, 76, 74, 71, 68]
+    @EnvironmentObject var router: Router
 
     var body: some View {
         Section {
@@ -37,7 +38,7 @@ struct RMResultView: View {
                     Image(systemName: "info.circle")
                         .foregroundStyle(.blue)
                         .onTapGesture(perform: {
-                            // routing to "How We Calculate"
+                            router.navigateTo(.HowWeCalculate)
                         })
                 }
 
