@@ -55,8 +55,14 @@ struct RMResultView: View {
                             .bold()
                     }
                     Button(action: {
-                        viewModelExercise.addArrayRM(item: viewModelExercise.activeExercise!, RM: viewModel.oneRepMax, context: context)
-                        showAlert = true
+                        if viewModelExercise.activeExercise != nil{
+                            viewModelExercise.addArrayRM(item: viewModelExercise.activeExercise!, RM: viewModel.oneRepMax, context: context)
+                            showAlert = true
+                        }
+                        else{
+                            print("Gak bisa")
+                        }
+
                     }, label: {
                         HStack {
                             Image(systemName: "square.and.pencil")

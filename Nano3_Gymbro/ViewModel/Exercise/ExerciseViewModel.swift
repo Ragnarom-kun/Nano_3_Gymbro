@@ -65,9 +65,6 @@ class ExerciseViewModel: ObservableObject{
                 let y = (bagianKiri + bagianKanan)/kiriBawah
                 
                 let bebanTambahan = ((lastRM ?? 1) * y)/100
-                print("y = \(y)")
-                print(bebanTambahan)
-                print(bebanTambahan + (lastRM ?? 1))
                 let ini = bebanTambahan + (lastRM ?? 1)
                 
                 activePersenan = y
@@ -91,9 +88,6 @@ class ExerciseViewModel: ObservableObject{
             let y = (bagianKiri + bagianKanan)/kiriBawah
             
             let bebanTambahan = ((lastRM ?? 1) * y)/100
-            print("y = \(y)")
-            print(bebanTambahan)
-            print(bebanTambahan + (lastRM ?? 1))
             let ini = bebanTambahan + (lastRM ?? 1)
             
             activePersenan = y
@@ -116,9 +110,6 @@ class ExerciseViewModel: ObservableObject{
             let y = (bagianKiri + bagianKanan)/kiriBawah
             
             let bebanTambahan = ((lastRM ?? 1) * y)/100
-            print("y = \(y)")
-            print(bebanTambahan)
-            print(bebanTambahan + (lastRM ?? 1))
             let ini = bebanTambahan + (lastRM ?? 1)
             
             activePersenan = y
