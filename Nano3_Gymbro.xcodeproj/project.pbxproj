@@ -30,11 +30,11 @@
 		E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC52C44E95E00EAC5B9 /* WhatRPEView.swift */; };
 		E4A8AFCD2C44E96500EAC5B9 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */; };
 		E4A8AFCE2C44E96500EAC5B9 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */; };
-		E4A8AFCF2C44E96500EAC5B9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */; };
 		E4A8AFD82C46461F00EAC5B9 /* InputDataExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFD72C46461F00EAC5B9 /* InputDataExercise.swift */; };
 		E4A8AFDD2C46762800EAC5B9 /* RangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFDC2C46762800EAC5B9 /* RangeType.swift */; };
 		E4A8AFDF2C46A59B00EAC5B9 /* LineChartRMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFDE2C46A59B00EAC5B9 /* LineChartRMView.swift */; };
 		E4A8AFE12C476AA500EAC5B9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFE02C476AA500EAC5B9 /* ProgressView.swift */; };
+		E4A8AFE32C4787B800EAC5B9 /* HowWeCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A8AFE22C4787B800EAC5B9 /* HowWeCalculateView.swift */; };
 		F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B28382C3FC8EF00DCF909 /* PRCardView.swift */; };
 		F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */; };
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
@@ -86,11 +86,11 @@
 		E4A8AFC52C44E95E00EAC5B9 /* WhatRPEView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatRPEView.swift; sourceTree = "<group>"; };
 		E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 		E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
-		E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		E4A8AFD72C46461F00EAC5B9 /* InputDataExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputDataExercise.swift; path = Nano3_Gymbro/InputDataExercise.swift; sourceTree = SOURCE_ROOT; };
 		E4A8AFDC2C46762800EAC5B9 /* RangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeType.swift; sourceTree = "<group>"; };
 		E4A8AFDE2C46A59B00EAC5B9 /* LineChartRMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartRMView.swift; sourceTree = "<group>"; };
 		E4A8AFE02C476AA500EAC5B9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E4A8AFE22C4787B800EAC5B9 /* HowWeCalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowWeCalculateView.swift; sourceTree = "<group>"; };
 		F82B28382C3FC8EF00DCF909 /* PRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCardView.swift; sourceTree = "<group>"; };
 		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 				201418012C3F89BD00321022 /* RMCalculatorView.swift */,
 				201418032C3F8A9600321022 /* RMInputView.swift */,
 				201418072C40439100321022 /* RMResultView.swift */,
+				E4A8AFE22C4787B800EAC5B9 /* HowWeCalculateView.swift */,
 			);
 			path = RMCalculator;
 			sourceTree = "<group>";
@@ -293,7 +294,6 @@
 			children = (
 				E4A8AFC92C44E96500EAC5B9 /* AddExerciseView.swift */,
 				E4A8AFCA2C44E96500EAC5B9 /* ExerciseListView.swift */,
-				E4A8AFCB2C44E96500EAC5B9 /* InputView.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -450,6 +450,7 @@
 				F8F7907B2C476CDD00209CDA /* CardView.swift in Sources */,
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
 				E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */,
+				E4A8AFE32C4787B800EAC5B9 /* HowWeCalculateView.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
 				E4A8AFCD2C44E96500EAC5B9 /* AddExerciseView.swift in Sources */,
 				E4A8AFC02C44E8AA00EAC5B9 /* PRView.swift in Sources */,
@@ -460,7 +461,6 @@
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
 				E4A8AFC82C44E95E00EAC5B9 /* WhatRPEView.swift in Sources */,
 				E4A8AFC72C44E95E00EAC5B9 /* ProgressiveOverloadPlanView.swift in Sources */,
-				E4A8AFCF2C44E96500EAC5B9 /* InputView.swift in Sources */,
 				E4A8AFB62C44E84700EAC5B9 /* ExerciseName.swift in Sources */,
 				E4A8AFB72C44E84700EAC5B9 /* ExerciseRM.swift in Sources */,
 				E4A8AFE12C476AA500EAC5B9 /* ProgressView.swift in Sources */,
@@ -639,6 +639,8 @@
 				DEVELOPMENT_TEAM = 2RQ6LB993C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerCal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -669,6 +671,8 @@
 				DEVELOPMENT_TEAM = 2RQ6LB993C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerCal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
