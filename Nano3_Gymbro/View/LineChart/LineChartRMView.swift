@@ -20,10 +20,6 @@ struct LineChartRMView: View {
         if let exerciseName = viewModelExercise.activeExercise {
             VStack {
                 HStack {
-//                    Text(exerciseName.name)
-//                        .font(.title2)
-//                        .fontWeight(.bold)
-//                        .foregroundColor(.blue)
                     Button(action: {
                         router.navigateTo(.ExerciseListView)
                     }, label: {

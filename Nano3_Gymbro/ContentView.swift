@@ -15,7 +15,7 @@ struct ContentView: View {
                     .tabItem {
                         Label("Calculator", systemImage: "percent")
                     }
-                LineChartRMView()
+                ProgressView()
                     .tabItem {
                         Label("Progress", systemImage: "chart.xyaxis.line")
                     }

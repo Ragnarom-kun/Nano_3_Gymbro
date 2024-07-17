@@ -16,7 +16,7 @@ struct ModalView: View {
     var viewModel: ExerciseViewModel
     @State private var weight: Double = 0.0
     var body: some View {
-     
+        
         VStack {
             Spacer()
             HStack(alignment:.center){
@@ -34,14 +34,14 @@ struct ModalView: View {
             
             VStack {
                 HStack {
-                                Spacer()
-                                Text("Weight Lift")
-                                TextField("0", value: $weight, formatter: NumberFormatter())
+                    Spacer()
+                    Text("Weight Lift")
+                    TextField("0", value: $weight, formatter: NumberFormatter())
                         .textFieldStyle(PlainTextFieldStyle()).fontWeight(.thin)
-                                Spacer()
-                                Text("Kg")
+                    Spacer()
+                    Text("Kg")
                 }.foregroundColor(Color("FontColor"))
-                            .padding(20)
+                    .padding(20)
                 
                 HStack {
                     Spacer()
@@ -56,9 +56,9 @@ struct ModalView: View {
                             // For example, you might want to add the weight as the first PR
                             viewModel.addArrayPR(item: exerciseName, PR: weight, context: context)
                             
-                         
+                            
                         }
-
+                        
                     }){
                         Text("Add New Exercise").foregroundColor(Color(.white)).padding(.horizontal,90)
                             .padding(.vertical, 14)
@@ -80,8 +80,8 @@ struct ModalView: View {
         .background(Color("ContainerColor"))
     }
     
-        
-      
+    
+    
 }
 
 
