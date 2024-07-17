@@ -59,10 +59,12 @@ struct RMResultView: View {
                     .background(.tertiary)
                     .clipShape(RoundedRectangle(cornerRadius: 12.0))
                     .onTapGesture {
-                        viewModelExercise.addArrayRM(item: viewModelExercise.activeExercise!, RM: viewModel.oneRepMax, context: context)
-                        showAlert = true
+                        if viewModelExercise.activeExercise != nil && viewModel.oneRepMax != 0.0 {
+                            viewModelExercise.addArrayRM(item: viewModelExercise.activeExercise!, RM: viewModel.oneRepMax, context: context)
+                            showAlert = true
+                        }
                     }
-                    .foregroundStyle(.blue)
+                    .foregroundStyle((viewModelExercise.activeExercise != nil && viewModel.oneRepMax != 0.0) ? Color.blue : Color.gray)
                     .alert(isPresented: $showAlert) {
                         Alert(
                             title: Text("Success"),
