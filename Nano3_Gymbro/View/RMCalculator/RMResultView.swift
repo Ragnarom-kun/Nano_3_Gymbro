@@ -38,7 +38,7 @@ struct RMResultView: View {
                     Image(systemName: "info.circle")
                         .foregroundStyle(.blue)
                         .onTapGesture(perform: {
-                            router.navigateTo(.WhatRPEView)
+                            // routing to "How We Calculate"
                         })
                 }
                 
@@ -61,9 +61,6 @@ struct RMResultView: View {
                         HStack {
                             Image(systemName: "square.and.pencil")
                             Text("Add to Progress")
-                                .onSubmit {
-                                    router.navigateTo(.LineChartRMView)
-                                }
                         }
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
