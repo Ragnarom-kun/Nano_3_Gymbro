@@ -34,9 +34,10 @@ struct ProgressiveOverloadPlanView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            Divider()
+            .listRowSeparator(.visible)
             HStack {
                 Button(action: {
+                    print("What is RPE")
                     showInfo = true
                 }) {
                     Text("What is RPE")
@@ -47,6 +48,7 @@ struct ProgressiveOverloadPlanView: View {
                         .presentationDetents([.height(726)])
                 }
             }
+            .listRowSeparator(.hidden)
 
             Button(action: {
                 if let activeExercise = viewModel.activeExercise,
@@ -70,7 +72,6 @@ struct ProgressiveOverloadPlanView: View {
         .listSectionSeparator(.hidden, edges: .top)
         
         if viewModel.showDetails == true{
-            Divider()
             Section{
                 HStack(alignment: .top) {
                     Image(systemName: "pencil.and.outline")
@@ -83,27 +84,29 @@ struct ProgressiveOverloadPlanView: View {
                 .foregroundStyle(.orange)
                 
                 HStack{
-                    Text("Increase to \(viewModel.activeBebanTambahan!) kg")
+                    Text("Increase to \(String(format: "%.1f", viewModel.activeBebanTambahan!)) kg")
                         .fontWeight(.semibold)
                     Spacer()
                     Image(systemName: "dumbbell.fill")
                 }
+                .listRowSeparator(.hidden)
                 .foregroundStyle(.blue)
                 .padding(.vertical, 10)
                 .padding(.horizontal, 16)
-                .background(Color.abuDefault)
+                .background(Color("YourPlanColor"))
                 .cornerRadius(8)
                 
                 HStack{
-                    Text("RPE: \(RPEStatic)")
+                    Text("RPE: \(String(format: "%.1f", RPEStatic))")
                         .fontWeight(.semibold)
                     Spacer()
-                    Text("Current Weight: \(viewModel.activeExercise!.sortedListRM.last!.value) kg")
+                    Text("Current Weight: \(String(format: "%.1f", viewModel.activeExercise!.sortedListRM.last!.value)) kg")
                         .fontWeight(.semibold)
                 }
+                .listRowSeparator(.hidden)
                 
-                Text("Based on your RPE of \(RPEStatic), you should add \(viewModel.activePersenan!)% to your current weight of \(viewModel.activeExercise!.sortedListRM.last!.value) kg. Increase it to \(viewModel.activeBebanTambahan!) kg to keep progressing and building strength. Keep up the great work!")
-                Spacer()
+                Text("Based on your RPE of \(String(format: "%.1f", RPEStatic)), you should add \(String(format: "%.1f", viewModel.activePersenan!))% to your current weight of \(String(format: "%.1f", viewModel.activeExercise!.sortedListRM.last!.value)) kg. Increase it to \(String(format: "%.1f", viewModel.activeBebanTambahan!)) kg to keep progressing and building strength. Keep up the great work!")
+                    .listRowSeparator(.hidden)
             }
         }
     }
