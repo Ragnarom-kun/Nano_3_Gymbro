@@ -1,0 +1,981 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "-" : {
+
+    },
+    "-0.055 RTF" : {
+
+    },
+    "% of 1RM" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "% من 1RM"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld kg"
+          }
+        }
+      }
+    },
+    "%lld Kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Kg"
+          }
+        }
+      }
+    },
+    "%lld lb" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld lb"
+          }
+        }
+      }
+    },
+    "=" : {
+
+    },
+    "0" : {
+
+    },
+    "0.522 + 0.419 e" : {
+
+    },
+    "1" : {
+
+    },
+    "1RM" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1RM"
+          }
+        }
+      }
+    },
+    "1RM (kg) =" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1RM (kg) ="
+          }
+        }
+      }
+    },
+    "1RM Calculator" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حساب 1RM"
+          }
+        }
+      }
+    },
+    "1RM Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقدم الحد الأقصى للتكرار الواحد (1RM)"
+          }
+        }
+      }
+    },
+    "2" : {
+
+    },
+    "3" : {
+
+    },
+    "4" : {
+
+    },
+    "5" : {
+
+    },
+    "6" : {
+
+    },
+    "6.5" : {
+
+    },
+    "7" : {
+
+    },
+    "7.5" : {
+
+    },
+    "8" : {
+
+    },
+    "8.5" : {
+
+    },
+    "9" : {
+
+    },
+    "9.5" : {
+
+    },
+    "10" : {
+
+    },
+    "Add New Exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة تمرين جديد"
+          }
+        }
+      }
+    },
+    "Add New Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة سجل جديد"
+          }
+        }
+      }
+    },
+    "Add to Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة إلى التقدم"
+          }
+        }
+      }
+    },
+    "Based on your RPE of %@, you should add %@%% to your current weight of %@ kg. Increase it to %@ kg to keep progressing and building strength. Keep up the great work!" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بناءً على RPE الخاص بك البالغ %1$@، يجب أن تضيف%2$@% إلى وزنك الحالي البالغ %3$@ كجم. زد الوزن إلى %4$@ كجم للمضي قدماً وبناء القوة. استمر في العمل الرائع!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Based on your RPE of %1$@, you should add %2$@%% to your current weight of %3$@ kg. Increase it to %4$@ kg to keep progressing and building strength. Keep up the great work!"
+          }
+        }
+      }
+    },
+    "Best" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأفضل"
+          }
+        }
+      }
+    },
+    "Brzychi and Ware et al. found that performing fewer than 10 reps to fatigue provides a more accurate estimate of your 1RM" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وجد Brzychi (4) و Ware et al. (17) أن أداء أقل من 10 تكرارات حتى الإرهاق يوفر تقديرًا أكثر دقة لقيمة 1-RM الخاصة بك."
+          }
+        }
+      }
+    },
+    "Calculate" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احسب"
+          }
+        }
+      }
+    },
+    "Calculator" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آلة حاسبة"
+          }
+        }
+      }
+    },
+    "Could have done 5 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كنت أستطيع القيام بخمس تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Could have done 6 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كنت أستطيع القيام بست تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Could have done 7 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كنت أستطيع القيام بسبع تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Could have done 8 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كنت أستطيع القيام بثماني تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Could have done 9 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كنت أستطيع القيام بتسع تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Current Weight: %@ kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن الحالي: %@ كغ"
+          }
+        }
+      }
+    },
+    "Date" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاريخ"
+          }
+        }
+      }
+    },
+    "Definitely could have done 1 more rep" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالتأكيد كنت قادرًا على القيام بتكرار واحد إضافي"
+          }
+        }
+      }
+    },
+    "Definitely could have done 2 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالتأكيد كنت قادرًا على القيام بتكرارين إضافيين"
+          }
+        }
+      }
+    },
+    "Definitely could have done 3 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التأكيد كنت قادرًا على القيام بثلاث تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Definitely could have done 4 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالتأكيد كنت قادرًا على القيام بأربع تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
+          }
+        }
+      }
+    },
+    "Description" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوصف"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم"
+          }
+        }
+      }
+    },
+    "Enter exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل التمرين"
+          }
+        }
+      }
+    },
+    "Exceeding 10 reps can reduce the accuracy of your RM value" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مكن أن يقلل تجاوز 10 تكرارات من دقة قيمة الحد الأقصى للتكرار."
+          }
+        }
+      }
+    },
+    "Exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمرين"
+          }
+        }
+      }
+    },
+    "Exercise Type" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نوع التمرين"
+          }
+        }
+      }
+    },
+    "Generate Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء الخطة"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+
+    },
+    "How We Calculate" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كيف نحسب"
+          }
+        }
+      }
+    },
+    "Increase to %@ kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "زيادة إلى %@ كغ"
+          }
+        }
+      }
+    },
+    "It aids in autoregulation, precise training tracking, and planning for progressive weight." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنه يساعد في التنظيم الآلي، تتبع التدريب الدقيق، والتخطيط للوزن التدريجي"
+          }
+        }
+      }
+    },
+    "Kg" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kg"
+          }
+        }
+      }
+    },
+    "Last" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأخيرة"
+          }
+        }
+      }
+    },
+    "Last Update: %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آخر تحديث: %@"
+          }
+        }
+      }
+    },
+    "Last Update: N/A" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "آخر تحديث: غير متوفر"
+          }
+        }
+      }
+    },
+    "lb" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lb"
+          }
+        }
+      }
+    },
+    "Maximal effort" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بذل أقصى جهد ممكن"
+          }
+        }
+      }
+    },
+    "Maybe could have done 1 more rep" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ربما كان بإمكاني القيام بتكرار واحد إضافي"
+          }
+        }
+      }
+    },
+    "Maybe could have done 2 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ربما كنت أستطيع القيام بتكرارين إضافيين"
+          }
+        }
+      }
+    },
+    "Maybe could have done 3 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ربما كنت أستطيع القيام بثلاث تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Maybe could have done 4 more reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ربما كنت أستطيع القيام بأربع تكرارات إضافية"
+          }
+        }
+      }
+    },
+    "Mayhew et al. Formula" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معادلة Mayhew et al."
+          }
+        }
+      }
+    },
+    "N/A" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غ/م"
+          }
+        }
+      }
+    },
+    "N/A %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غ/م %@"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "  الاسم"
+          }
+        }
+      }
+    },
+    "New Exercise" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمرين جديد"
+          }
+        }
+      }
+    },
+    "New Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رقم قياسي جديد"
+          }
+        }
+      }
+    },
+    "No active exercise selected" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يتم اختيار تمرين نشط"
+          }
+        }
+      }
+    },
+    "No Data Available" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد بيانات"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسناً"
+          }
+        }
+      }
+    },
+    "Personal Record" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل شخصي"
+          }
+        }
+      }
+    },
+    "Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقدم"
+          }
+        }
+      }
+    },
+    "Progressive Overload Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطة التحميل الزائد التدريجي"
+          }
+        }
+      }
+    },
+    "Repetition weight, a load less than 1RM used to perform repetitions" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " وزن التكرار (repetition weight)، حمولة أقل من 1 RM تُستخدم لإجراء التكرارات"
+          }
+        }
+      }
+    },
+    "Repetitions to fatigue" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التكرارات حتى الإجهاد"
+          }
+        }
+      }
+    },
+    "Reps" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تكرار"
+          }
+        }
+      }
+    },
+    "RepWt" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وزن التكرار"
+          }
+        }
+      }
+    },
+    "Results" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النتائج"
+          }
+        }
+      }
+    },
+    "RM has been added to progress." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمت إضافة RM إلى التقدم"
+          }
+        }
+      }
+    },
+    "RPE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RPE"
+          }
+        }
+      }
+    },
+    "RPE (Rating of Perceived Exertion) measures training intentisty, especially in weightlifting, indicating how many reps you could still perform in your last set." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقيس RPE (تصنيف الجهد المدرك) كثافة التدريب، خاصةً في رفع الأثقال، ويشير إلى عدد التكرارات التي لا يزال بإمكانك القيام بها في آخر مجموعة.\n\nوهو يساعد في التنظيم التلقائي وتتبع التدريب بدقة والتخطيط للوزن التدريجي"
+          }
+        }
+      }
+    },
+    "RPE Measurement" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قياس RPE"
+          }
+        }
+      }
+    },
+    "RPE: %@" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RPE: %@"
+          }
+        }
+      }
+    },
+    "RTF" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RTF"
+          }
+        }
+      }
+    },
+    "Segments" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شرائح"
+          }
+        }
+      }
+    },
+    "Sets" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجموعة"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ"
+          }
+        }
+      }
+    },
+    "Success" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم بنجاح"
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القيمة"
+          }
+        }
+      }
+    },
+    "Value (Kg)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القيمة(Kg)"
+          }
+        }
+      }
+    },
+    "Value (lbs)" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القيمة(lbs)"
+          }
+        }
+      }
+    },
+    "Volume" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حجم"
+          }
+        }
+      }
+    },
+    "Weight" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن"
+          }
+        }
+      }
+    },
+    "Weight Lift" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوزن"
+          }
+        }
+      }
+    },
+    "What is RPE" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هو RPE"
+          }
+        }
+      }
+    },
+    "What is RPE?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما هو RPE؟"
+          }
+        }
+      }
+    },
+    "Why max 10 reps input?" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لماذا الحد الأقصى لإدخال ١٠ تكرارات؟"
+          }
+        }
+      }
+    },
+    "Your 1RM is .." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نتيجة 1RM الخاصة بك هي .."
+          }
+        }
+      }
+    },
+    "Your Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطتك"
+          }
+        }
+      }
+    },
+    "Your Progress" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقدمك"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
