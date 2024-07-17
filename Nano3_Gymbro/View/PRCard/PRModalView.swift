@@ -52,8 +52,6 @@ struct ModalView: View {
                                 presentationMode.wrappedValue.dismiss()
                             }
                         } else {
-                            // Handle the case where sortedListPR is empty or nil
-                            // For example, you might want to add the weight as the first PR
                             viewModel.addArrayPR(item: exerciseName, PR: weight, context: context)
                             
                          
