@@ -38,6 +38,7 @@
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
 		F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC92C40285500AC7670 /* ChartData.swift */; };
 		F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */; };
+		F8F7907B2C476CDD00209CDA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7907A2C476CDB00209CDA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
 		F8B69FC92C40285500AC7670 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRModalView.swift; sourceTree = "<group>"; };
+		F8F7907A2C476CDB00209CDA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 		F82B28352C3FC8CB00DCF909 /* PRCard */ = {
 			isa = PBXGroup;
 			children = (
+				F8F7907A2C476CDB00209CDA /* CardView.swift */,
 				F82B28382C3FC8EF00DCF909 /* PRCardView.swift */,
 				F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */,
 				F8B69FCB2C44C3FE00AC7670 /* PRModalView.swift */,
@@ -440,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20584DB42C44DBD800B482F4 /* Formatter.swift in Sources */,
+				F8F7907B2C476CDD00209CDA /* CardView.swift in Sources */,
 				E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */,
 				E4A8AFB82C44E84700EAC5B9 /* ExercisePR.swift in Sources */,
 				E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */,
