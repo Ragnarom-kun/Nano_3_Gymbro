@@ -11,7 +11,6 @@
 		201418042C3F8A9600321022 /* RMInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418032C3F8A9600321022 /* RMInputView.swift */; };
 		201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418052C403C1100321022 /* RMCalculatorViewModel.swift */; };
 		201418082C40439100321022 /* RMResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201418072C40439100321022 /* RMResultView.swift */; };
-		20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */; };
 		E42819542C3BA5EF008883D4 /* Nano3_GymbroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */; };
 		E42819562C3BA5EF008883D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819552C3BA5EF008883D4 /* ContentView.swift */; };
 		E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42819572C3BA5F0008883D4 /* Assets.xcassets */; };
@@ -23,6 +22,7 @@
 		E42819882C3F8A9B008883D4 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819872C3F8A9B008883D4 /* RouterViewModel.swift */; };
 		E428198F2C3F9AD0008883D4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428198E2C3F9AD0008883D4 /* LineChartView.swift */; };
 		E42819942C3FA47C008883D4 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42819932C3FA47C008883D4 /* RouterView.swift */; };
+		F5EC5A7B2C44E2D2003749BB /* HowWeCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC5A7A2C44E2D2003749BB /* HowWeCalculateView.swift */; };
 		F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82B28382C3FC8EF00DCF909 /* PRCardView.swift */; };
 		F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */; };
 		F8B69FC32C3FD94D00AC7670 /* PRDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */; };
@@ -53,7 +53,6 @@
 		201418032C3F8A9600321022 /* RMInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMInputView.swift; sourceTree = "<group>"; };
 		201418052C403C1100321022 /* RMCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RMCalculatorViewModel.swift; path = Nano3_Gymbro/View/RMCalculator/RMCalculatorViewModel.swift; sourceTree = SOURCE_ROOT; };
 		201418072C40439100321022 /* RMResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMResultView.swift; sourceTree = "<group>"; };
-		20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E42819502C3BA5EF008883D4 /* Nano3_Gymbro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano3_Gymbro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42819532C3BA5EF008883D4 /* Nano3_GymbroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nano3_GymbroApp.swift; sourceTree = "<group>"; };
 		E42819552C3BA5EF008883D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		E42819872C3F8A9B008883D4 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		E428198E2C3F9AD0008883D4 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		E42819932C3FA47C008883D4 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		F5EC5A7A2C44E2D2003749BB /* HowWeCalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowWeCalculateView.swift; sourceTree = "<group>"; };
 		F82B28382C3FC8EF00DCF909 /* PRCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRCardView.swift; sourceTree = "<group>"; };
 		F8B69FC02C3FCB7800AC7670 /* ModelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCard.swift; sourceTree = "<group>"; };
 		F8B69FC22C3FD94D00AC7670 /* PRDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetailView.swift; sourceTree = "<group>"; };
@@ -107,6 +107,7 @@
 				201418012C3F89BD00321022 /* RMCalculatorView.swift */,
 				201418032C3F8A9600321022 /* RMInputView.swift */,
 				201418072C40439100321022 /* RMResultView.swift */,
+				F5EC5A7A2C44E2D2003749BB /* HowWeCalculateView.swift */,
 			);
 			path = RMCalculator;
 			sourceTree = "<group>";
@@ -114,7 +115,6 @@
 		E42819472C3BA5EF008883D4 = {
 			isa = PBXGroup;
 			children = (
-				20E6CAC32C3D127400FDC215 /* Localizable.xcstrings */,
 				E42819522C3BA5EF008883D4 /* Nano3_Gymbro */,
 				E42819632C3BA5F0008883D4 /* Nano3_GymbroTests */,
 				E428196D2C3BA5F0008883D4 /* Nano3_GymbroUITests */,
@@ -356,7 +356,6 @@
 			files = (
 				E428195B2C3BA5F0008883D4 /* Preview Assets.xcassets in Resources */,
 				E42819582C3BA5F0008883D4 /* Assets.xcassets in Resources */,
-				20E6CAC42C3D127400FDC215 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +386,7 @@
 				F8B69FCC2C44C40300AC7670 /* PRModalView.swift in Sources */,
 				E42819942C3FA47C008883D4 /* RouterView.swift in Sources */,
 				201418062C403C1100321022 /* RMCalculatorViewModel.swift in Sources */,
+				F5EC5A7B2C44E2D2003749BB /* HowWeCalculateView.swift in Sources */,
 				F82B28392C3FC8EF00DCF909 /* PRCardView.swift in Sources */,
 				F8B69FC12C3FCB7B00AC7670 /* ModelCard.swift in Sources */,
 				F8B69FCA2C40285700AC7670 /* ChartData.swift in Sources */,
@@ -567,7 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,7 +597,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

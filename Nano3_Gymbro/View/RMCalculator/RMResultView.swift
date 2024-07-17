@@ -17,6 +17,8 @@ struct Customer: Identifiable {
 struct RMResultView: View {
     @EnvironmentObject var viewModel: RMCalculatorViewModel
     let percentages = [96, 92, 89, 86, 84, 81, 79, 76, 74, 71, 68]
+    
+    @State private var showInfo = false
 
     var body: some View {
         Section {
@@ -30,8 +32,17 @@ struct RMResultView: View {
                     }
                     .foregroundStyle(.orange)
                     Spacer()
-                    Image(systemName: "info.circle")
-                        .foregroundStyle(.blue)
+                    
+                    Button(action: {
+                        showInfo = true
+                    }) {
+                        Image(systemName: "info.circle")
+                            .foregroundStyle(.blue)
+                    }
+                    .sheet(isPresented: $showInfo) {
+                        HowWeCalculateView()
+                            .presentationDetents([.height(726)])
+                    }
                 }
 
                 VStack(spacing: 12) {
