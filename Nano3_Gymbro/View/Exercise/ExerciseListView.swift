@@ -10,7 +10,6 @@ struct ExerciseListView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        NavigationView {
             VStack {
                 List {
                     ForEach(exercises.sorted(by: { $0.name < $1.name })) { exercise in
@@ -62,7 +61,7 @@ struct ExerciseListView: View {
                     }
                 }
             }
-        }.navigationBarBackButtonHidden()
+        .navigationBarBackButtonHidden()
     }
 }
 
