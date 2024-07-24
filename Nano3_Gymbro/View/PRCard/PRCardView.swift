@@ -12,33 +12,33 @@ struct PRCardView: View {
         if exercises.isEmpty {
             Text("No Data Available").foregroundColor(Color("FontColor"))
         } else {
-            NavigationView {
-                VStack {
-                    ScrollView {
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2)) {
-                            ForEach(exercises) { exercise in
-                                NavigationLink(destination: DetailView(exerciseName: exercise)) {
-                                    CardView(exerciseName: exercise, units: $selectedUnits)
-                                }
+            VStack {
+                ScrollView {
+                    // Determine the number of columns based on the device type
+                    let columns = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columns)) {
+                        ForEach(exercises) { exercise in
+                            NavigationLink(destination: DetailView(exerciseName: exercise)) {
+                                CardView(exerciseName: exercise, units: $selectedUnits)
                             }
                         }
-                        .padding()
-                        Spacer()
                     }
-                    .navigationTitle("Personal Record")
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Picker("", selection: $selectedUnits) {
-                                ForEach(units, id: \.self) { unit in
-                                    Text("\(unit)").tag(unit)
-                                }
-                            }
-                            .frame(maxWidth: 100)
-                            .pickerStyle(.segmented)
-                        }
-                    }
-                    .background(Color("BackgroundBG").edgesIgnoringSafeArea(.all))
+                    .padding()
+                    Spacer()
                 }
+                .navigationTitle("Personal Record")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Picker("", selection: $selectedUnits) {
+                            ForEach(units, id: \.self) { unit in
+                                Text("\(unit)").tag(unit)
+                            }
+                        }
+                        .frame(maxWidth: 100)
+                        .pickerStyle(.segmented)
+                    }
+                }
+                .background(Color("BackgroundBG").edgesIgnoringSafeArea(.all))
             }
         }
     }
