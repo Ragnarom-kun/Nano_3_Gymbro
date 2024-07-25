@@ -243,6 +243,9 @@
     "10" : {
 
     },
+    "Add 1RM to Generate Plan" : {
+
+    },
     "Add New Exercise" : {
       "localizations" : {
         "ar" : {
@@ -378,6 +381,7 @@
       }
     },
     "Cannot calculate. Active Exercise is missing or empty." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -650,9 +654,6 @@
         }
       }
     },
-    "Error" : {
-
-    },
     "Exceeding 10 reps can reduce the accuracy of your RM value" : {
       "localizations" : {
         "ar" : {
@@ -716,9 +717,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "How We Calculate" : {
       "localizations" : {
