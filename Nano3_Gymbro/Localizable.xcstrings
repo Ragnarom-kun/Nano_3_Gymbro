@@ -377,6 +377,39 @@
         }
       }
     },
+    "Cannot calculate. Active Exercise is missing or empty." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يمكن الحساب. التمرين النشط مفقود أو فارغ."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak bisa calculate. Active Exercise tidak ada atau kosong."
+          }
+        }
+      }
+    },
+    "Cannot calculate. activeExercise is missing or empty." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يمكن الحساب. التمرين النشط مفقود أو فارغ."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak bisa calculate. activeExercise tidak ada atau kosong."
+          }
+        }
+      }
+    },
     "Could have done 5 more reps" : {
       "localizations" : {
         "ar" : {
@@ -617,6 +650,9 @@
         }
       }
     },
+    "Error" : {
+
+    },
     "Exceeding 10 reps can reduce the accuracy of your RM value" : {
       "localizations" : {
         "ar" : {
@@ -680,6 +716,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "How We Calculate" : {
       "localizations" : {
