@@ -13,6 +13,8 @@ struct ProgressiveOverloadPlanView: View {
     var RPEList = [1, 2, 3, 4, 5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
     @State private var showInfo = false
     @EnvironmentObject var viewModel: ExerciseViewModel
+    @State private var showAlert = false
+    
     var body: some View {
         Section {
             HStack(alignment: .top) {
@@ -57,7 +59,7 @@ struct ProgressiveOverloadPlanView: View {
                     viewModel.setShowDetails(true)
                     RPEStatic = RPE
                 } else {
-                    print("Tidak bisa calculate")
+                    showAlert = true
                 }
 
             }, label: {
@@ -68,6 +70,9 @@ struct ProgressiveOverloadPlanView: View {
                     .background(.primary)
                     .clipShape(RoundedRectangle(cornerRadius: 12.0))
             })
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Error"), message: Text("Cannot calculate. Active Exercise is missing or empty."), dismissButton: .default(Text("OK")))
+            }
         }
         .listSectionSeparator(.hidden, edges: .top)
         
