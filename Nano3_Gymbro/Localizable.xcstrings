@@ -243,6 +243,22 @@
     "10" : {
 
     },
+    "Add 1RM to Generate Plan" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحد الأقصى لمرة واحدة لإنشاء خطة"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan 1RM untuk buat Rencana"
+          }
+        }
+      }
+    },
     "Add New Exercise" : {
       "localizations" : {
         "ar" : {
@@ -378,6 +394,7 @@
       }
     },
     "Cannot calculate. Active Exercise is missing or empty." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -650,9 +667,6 @@
         }
       }
     },
-    "Error" : {
-
-    },
     "Exceeding 10 reps can reduce the accuracy of your RM value" : {
       "localizations" : {
         "ar" : {
@@ -716,9 +730,6 @@
           }
         }
       }
-    },
-    "Hello, World!" : {
-
     },
     "How We Calculate" : {
       "localizations" : {

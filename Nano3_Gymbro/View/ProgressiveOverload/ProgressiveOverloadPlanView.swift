@@ -14,7 +14,7 @@ struct ProgressiveOverloadPlanView: View {
     @State private var showInfo = false
     @EnvironmentObject var viewModel: ExerciseViewModel
     @State private var showAlert = false
-    
+
     var body: some View {
         Section {
             HStack(alignment: .top) {
@@ -45,39 +45,45 @@ struct ProgressiveOverloadPlanView: View {
                     Text("What is RPE")
                 }
                 Spacer()
-                .sheet(isPresented: $showInfo) {
-                    WhatRPEView()
-                        .presentationDetents([.height(726)])
-                }
+                    .sheet(isPresented: $showInfo) {
+                        WhatRPEView()
+                            .presentationDetents([.height(726)])
+                    }
             }
             .listRowSeparator(.hidden)
 
             Button(action: {
                 if let activeExercise = viewModel.activeExercise,
-                   !activeExercise.sortedListRM.isEmpty {
+                   !activeExercise.sortedListRM.isEmpty
+                {
                     viewModel.calculateTrainingPlan(RPE: RPE)
                     viewModel.setShowDetails(true)
                     RPEStatic = RPE
+                }
+            }, label: {
+                if (viewModel.activeExercise == nil || viewModel.activeExercise?.sortedListRM.isEmpty ?? true) {
+                    Text("Add 1RM to Generate Plan")
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .foregroundStyle(.gray)
+                        .background(.primary)
+                        .clipShape(RoundedRectangle(cornerRadius: 12.0))
                 } else {
-                    showAlert = true
+                    Text("Generate Plan")
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 14)
+                        .foregroundStyle(.white)
+                        .background(.primary)
+                        .clipShape(RoundedRectangle(cornerRadius: 12.0))
                 }
 
-            }, label: {
-                Text("Generate Plan")
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .foregroundStyle(.white)
-                    .background(.primary)
-                    .clipShape(RoundedRectangle(cornerRadius: 12.0))
             })
-            .alert(isPresented: $showAlert) {
-                Alert(title: Text("Error"), message: Text("Cannot calculate. Active Exercise is missing or empty."), dismissButton: .default(Text("OK")))
-            }
+            .disabled(viewModel.activeExercise == nil || viewModel.activeExercise?.sortedListRM.isEmpty ?? true)
         }
         .listSectionSeparator(.hidden, edges: .top)
-        
-        if viewModel.showDetails == true{
-            Section{
+
+        if viewModel.showDetails == true {
+            Section {
                 HStack(alignment: .top) {
                     Image(systemName: "pencil.and.outline")
                     Text("Your Plan")
@@ -87,8 +93,8 @@ struct ProgressiveOverloadPlanView: View {
                 }
                 .listRowSeparator(.hidden)
                 .foregroundStyle(.orange)
-                
-                HStack{
+
+                HStack {
                     Text("Increase to \(String(format: "%.1f", viewModel.activeBebanTambahan!)) kg")
                         .fontWeight(.semibold)
                     Spacer()
@@ -100,8 +106,8 @@ struct ProgressiveOverloadPlanView: View {
                 .padding(.horizontal, 16)
                 .background(Color("YourPlanColor"))
                 .cornerRadius(8)
-                
-                HStack{
+
+                HStack {
                     Text("RPE: \(String(format: "%.1f", RPEStatic))")
                         .fontWeight(.semibold)
                     Spacer()
@@ -109,7 +115,7 @@ struct ProgressiveOverloadPlanView: View {
                         .fontWeight(.semibold)
                 }
                 .listRowSeparator(.hidden)
-                
+
                 Text("Based on your RPE of \(String(format: "%.1f", RPEStatic)), you should add \(String(format: "%.1f", viewModel.activePersenan!))% to your current weight of \(String(format: "%.1f", viewModel.activeExercise!.sortedListRM.last!.value)) kg. Increase it to \(String(format: "%.1f", viewModel.activeBebanTambahan!)) kg to keep progressing and building strength. Keep up the great work!")
                     .listRowSeparator(.hidden)
             }
