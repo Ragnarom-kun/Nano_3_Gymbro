@@ -7,39 +7,64 @@ struct PRCardView: View {
     @State private var cards: [Card] = []
     @State var selectedUnits = "Kg"
     @State var units = ["Kg", "lb"]
-
+    
     var body: some View {
-        if exercises.isEmpty {
-            Text("No Data Available").foregroundColor(Color("FontColor"))
-        } else {
-            VStack {
-                ScrollView {
-                    // Determine the number of columns based on the device type
-                    let columns = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columns)) {
-                        ForEach(exercises) { exercise in
-                            NavigationLink(destination: DetailView(exerciseName: exercise)) {
-                                CardView(exerciseName: exercise, units: $selectedUnits)
-                            }
-                        }
+        VStack(alignment: .leading) {
+            HStack {
+                Spacer()
+                Picker("", selection: $selectedUnits) {
+                    ForEach(units, id: \.self) { unit in
+                        Text("\(unit)").tag(unit)
                     }
-                    .padding()
-                    Spacer()
                 }
-                .navigationTitle("Personal Record")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Picker("", selection: $selectedUnits) {
-                            ForEach(units, id: \.self) { unit in
-                                Text("\(unit)").tag(unit)
+                .frame(maxWidth: 100)
+                .pickerStyle(.segmented)
+                .padding(15)
+            }
+            
+         
+            .frame(maxWidth: .infinity)
+            
+            HStack {
+                Text("Personal Record")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding(15)
+            }
+            
+            if exercises.isEmpty {
+                Text("No Data Available")
+                    .foregroundColor(Color("FontColor"))
+            } else {
+                VStack {
+                    ScrollView {
+                        let columns = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: columns)) {
+                            ForEach(exercises) { exercise in
+                                NavigationLink(destination: DetailView(exerciseName: exercise)) {
+                                    CardView(exerciseName: exercise, units: $selectedUnits)
+                                }
                             }
                         }
-                        .frame(maxWidth: 100)
-                        .pickerStyle(.segmented)
+                        .padding()
+                    }
+                    .background(Color("BackgroundBG"))
+                    .navigationTitle("Personal Record")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Picker("", selection: $selectedUnits) {
+                                ForEach(units, id: \.self) { unit in
+                                    Text(unit).tag(unit)
+                                }
+                            }
+                            .frame(maxWidth: 100)
+                            .pickerStyle(SegmentedPickerStyle())
+                        }
                     }
                 }
                 .background(Color("BackgroundBG").edgesIgnoringSafeArea(.all))
             }
         }
+        .background(Color("BackgroundBG"))
     }
 }
